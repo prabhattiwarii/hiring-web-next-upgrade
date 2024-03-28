@@ -1,96 +1,86 @@
-.body{
-    margin: 0 auto;
-    
-}
-
-.mainwrap{
-    width: 1260px;
-    background-image: url("../../public/images/footer-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F5F6F9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    justify-content: space-around;
-}
-
-.Bottom{
-  width: 1260px;
+.footerwrap{
+  background-image: url("../../public/images/footer-bg.png");
   background-color: #F5F6F9;
-  text-decoration: none;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footertop{
+  padding: 92px 20px 25px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap:100px;
 }
 
-.Bottom1{
-    width: 1260px;
-  text-decoration: none;
+.footertop .footerdetails{
+  width:calc(33.33% - 66.7px);
+  color: #6C8BA7;
+}
 
-   
+.footerdetails .companeylogo{
+  margin:0 0 30px;
 }
-.mainwrap .wraptestimonial{
-    width: 33%;
-    color: #6C8BA7;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
+.footerdetails .text{
+  font-size: 16px;
+  text-align: justify;
 }
-.mainwrap .wraptestimonial .mainwrap1{
-    font-size: 20px;
-    color: black;
-    font-weight: 800;
+.footerdetails .detailsheading{
+  font-size: 22px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #101010;
+    margin-bottom: 25px;
 }
-.mainwrapmain{
-    font-weight: 900;
-    color: black;
-    font-size: 20px;
+.footerdetails .footerlists .footerlist{
+  margin-bottom: 12px;
+  list-style: disc;
+  color: #1589f1;
 }
-.mainsection .mainwrap .wraptestimonial1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footerlists .footerlist a{
+  font-size: 16px;
     color: #454545;
-    row-gap: 20px;
-    font-weight: 400;
 }
-.wraptestimonial1 .wrap{
-    display: flex;
+
+.footerdetails .contactlist li{
+  padding:0 0 15px;
+  color: #454545;
+}
+.footerbottom{
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+.footercopyright{
+  max-width:1280px;
+  margin: 0 auto;
+  text-align: center;
+  padding:0 20px;
+}
+
+@media(max-width:991px){
+  .footertop{
     flex-direction: column;
-    row-gap: 10px;
+    row-gap:30px;
+  }
+  .footertop .footerdetails{
+    width:100%;
+  }
+  .footerdetails .text{
+    max-width:700px;
+  }
+  .footerdetails .detailsheading{
+      margin-bottom: 15px;
+  }
+  .footerdetails .footerlists{
+    padding: 0 0 0 17px;
+  }
+  .footerdetails .contactlist li{
+    padding:0 0 10px;
+  }
 }
-
-
-/* Base styling for the list */
-.colorlist {
-    list-style-type: none; /* Removes default list-style */
-    padding-left: 0; /* Adjusts padding */
+@media(max-width:767px){
+  .footertop{
+    padding:50px 20px 25px;
   }
-  
-  /* Styling each list item */
-  .colorlist li {
-    position: relative; /* For pseudo-element positioning */
-    margin-bottom: 10px; /* Space between items */
-    padding-left: 20px; /* Space for the custom disc */
-  }
-  
-  /* Custom colorful discs using pseudo-elements */
-  .colorlist li:before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Aligns the disc */
-    left: 0; /* Positions at the beginning of the item */
-    top: 50%; /* Centers vertically */
-    transform: translateY(-50%); /* Precise centering */
-    width: 5px; /* Disc size */
-    height: 5px; /* Disc size */
-    border-radius: 50%; /* Makes it circular */
-    background-color: skyblue; /* Default disc color */
-  }
-  
-  /* Custom colors for each item */
-  ul.colorlist li:nth-child(1):before { background-color: #ff0000; } /* Red */
-  ul.colorlist li:nth-child(2):before { background-color: #00ff00; } /* Green */
-  ul.colorlist li:nth-child(3):before { background-color: #0000ff; } /* Blue */
-  ul.colorlist li:nth-child(4):before { background-color: #ff00ff; } /* Magenta */
-  
+}
