@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {font-family:"Inter",sans-serif;text-decoration:none;box-sizing:border-box;}
+body{scroll-behavior:smooth;margin:0;padding:0;}
+
+
+/* form */
+.input-form {width:100%;display:flex;flex-direction:column;margin:0 0 20px;}
+input{color:#2E2E2E;box-sizing:border-box;font-size:14px;height:40px;padding:6px 12px;border:1px solid #00000029;box-shadow: 0px 0px 10px #00000029;letter-spacing: 0.4px;border-radius:6px;width:100%;}
+textarea{resize:none;height:80px;padding:6px 12px;font-size:14px;line-height:1.4;box-shadow:0px 0px 10px #00000029;border-radius:4px;box-sizing: border-box;;border:1px solid #00000029;width: 100%;}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{outline-color:skyblue !important;outline:1px solid;}
+
+
+textarea.has-input-error,
+input.has-input-error,
+select.has-input-error{border-color:#FF0000 !important;}
+textarea.has-input-error:focus-visible,
+input.has-input-error:focus-visible,
+select.has-input-error:focus-visible{outline-color:#FF0000 !important;outline: auto;}
+.react-tel-input input.has-input-error{border:1px solid #FF0000 !important;}

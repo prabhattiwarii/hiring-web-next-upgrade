@@ -1,0 +1,108 @@
+
+.navwrap {
+  justify-content:space-between;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: white;
+  max-width:1280px;
+  padding:0 20px;
+}
+.companyLogoWrap {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  cursor: pointer;
+}
+.navbar {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .home {
+  text-decoration: none;
+}
+.navbar .Company {
+  text-decoration: none;
+}
+.navbar .Services {
+  text-decoration: none;
+}
+.navbar .Portfolio {
+  text-decoration: none;
+}
+.navbar .Career {
+  text-decoration: none;
+}
+.navbar .Contact {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .Contact1 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.Contact1 span {
+  background-color: cornflowerblue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
+.subParent{
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.ServicesNew{
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.ServicesMain{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  width: max-content;
+  top: 50px;
+}
+.Services1{
+  font-size: 16px;
+  color: rgb(17, 17, 17);
+  padding: 10.5px 20px;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+}
+
+
