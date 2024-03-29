@@ -308,14 +308,8 @@ setcount();
           </div>
 
           <div className={style.image}>
-            <Image
-              src="/images/converted.png"
-              width={50}
-              height={50}
-              alt="IMAGE"
-            ></Image>
+            <Image src="/images/converted.png" width={50} height={50} alt="IMAGE"/>
           </div>
-
           <div className={style.wrapb}>
             <div className={style.wrap4}>
               <div className={style.wrapreact}> React-Native Development</div>{" "}
@@ -335,12 +329,10 @@ setcount();
           </div>
         </div>
       </div>
-
       <div className={style.wrapbox}>
         <div className={style.box}>
           <div className={style.boxa}>Satisfied Clients</div>
           <span>+200{count}</span>
-        
         </div>
         <div className={style.box}>
           <div className={style.boxa}>project Completed</div>
@@ -355,100 +347,58 @@ setcount();
           <span>13+</span>
         </div>
       </div>
-
       <div className={style.wrapsection}>
         <div className={style.sec1}>Why Choose Weapplinse</div>
         <div className={style.sec2}>
           We Create Amazing And Remarkable <br />
           <span>Experience For Our Clients</span>
         </div>
-
         <div className={style.mainsection}>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_1.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_1.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Highly skilled Developers</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_2.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_2.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">On Time Delivery</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_3.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_3.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Quick Response</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_4.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_4.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Diverse Expertise</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_5.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_5.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Committed to Quality</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_6.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_6.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Responsive to your need</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_7.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_7.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Follows Industry Trends</div>
           </div>
           <div className={style.sec3}>
             <div className={style.main1}>
-              <Image
-                src="/images/homeimg_8.png"
-                alt="image"
-                width={50}
-                height={40}
-              ></Image>
+              <Image src="/images/homeimg_8.png" alt="image" width={50} height={40}/>
             </div>
             <div className="">Guaranteed ROI</div>
           </div>
