@@ -147,7 +147,7 @@
   color: #ffffff;
 }
 
-.modal {
+.modal{
   position: fixed;
   inset: 0;
   z-index: 99999;
