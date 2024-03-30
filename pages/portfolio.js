@@ -63,7 +63,7 @@ const Wrap = styled.div`
                             0 0 0 10px rgb(36 112 208 / 10%),
                             0 0 0 20px rgba(102, 102, 102, 0);
                         }
-                      }
+                    }
                 }
             }
         }
