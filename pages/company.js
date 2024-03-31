@@ -1,6 +1,6 @@
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Wrap = styled.div` 
@@ -21,10 +21,10 @@ const Wrap = styled.div`
                     65% {transform: translate(0, 5px);}
                     65% {transform: translate(5px, 0);}
                     100% {transform: translate(0, 0);}
-                  }
-                  
+                }
             }
             & .content-wrap{
+                flex: 0 0 auto;width: 50%;
                 & .heading{font-size: 38px;line-height: 46px;margin-bottom:8px;}
                 & .text{text-align: justify;margin-top: 0;margin-bottom:16px;color: #6C8BA7;line-height: 25px;}
                 & .info-wrap{
@@ -79,6 +79,188 @@ const Wrap = styled.div`
                 }
             }
         }
+        & .vision-wrap{
+            display:flex;align-items:center;padding:50px 0 0;
+            & .img-wrap{
+                flex: 0 0 auto;width: 50%;
+                & img{border-style: none;height: auto;max-width: 100%;vertical-align: middle;animation: move3 3s infinite;}
+                @-webkit-keyframes move3 {
+                    0% {transform: translate(0, 0);}
+                    20% {transform: translate(5px, 0);}
+                    40% {transform: translate(5px, 5px);}
+                    65% {transform: translate(0, 5px);}
+                    65% {transform: translate(5px, 0);}
+                    100% {transform: translate(0, 0);}
+                } 
+            }
+            & .content-wrap{
+                flex: 0 0 auto;width: 50%;
+                & .head-wrap{
+                    margin-bottom: 24px;
+                    & .sub-title{padding: 10px 30px;display: inline-block;border-radius: 10px;font-size: 18px;font-weight: 600;color: #1589F1;margin:0 0 15px;line-height: 1.2;background-color: #EBF5FF;}
+                    & .about-title{
+                        font-size: 35px;font-weight: 300;color: #294762;line-height: 1.2;margin:0 0 0.5rem;
+                        & .about-text{font-weight: 700;}
+                    }
+                }
+                & .accordion-wrap{
+                    max-width: 475px;
+                    & .card{
+                        border: none;border-radius: 0;margin-bottom: 20px;background: transparent;position: relative;display: flex;flex-direction: column;min-width: 0;word-wrap: break-word;
+                        .card-header {
+                            padding: 0;border: none;display: flex;border-radius: 0;font-size: 20px;background: transparent;
+                            &.collapsed{
+                                text-decoration: none;color: #294762;font-weight: 600;
+                                & .toggle-btn {
+                                    transform: rotate(0deg);height: 18px;width: 18px;flex: none;margin-top: 2px;transition: 0.5s;margin-right: 15px;position: relative;
+                                    &:before,
+                                    &:after {content: '';position: absolute;width: 2px;height: 100%;background: #1589f1;transition: 0.5s;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+                                    &:before {transform: translate(-50%, -50%) rotate(90deg);}
+                                    &:after {transform: translate(-50%, -50%);}
+                                }
+                                & .open {
+                                    transform: rotate(0deg);height: 18px;width: 18px;flex: none;margin-top: 2px;transition: 0.5s;margin-right: 15px;position: relative;
+                                    &:before,
+                                    &:after {content: '';position: absolute;width: 2px;height: 100%;background: #1589f1;transition: 0.5s;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+                                    &:before {transform: translate(-50%, -50%) rotate(90deg);}
+                                    &:after {transform: translate(-50%, -50%) rotate(90deg);}
+                                }
+                            }
+                        }
+                        & .collapse:not(.show) {
+                            display: none;
+                        }
+                        & .card-body{
+                            padding: 10px 0 0 30px;
+                            & p{margin: 0;text-align: justify;font-size: 16px;color: #6C8BA7;line-height:26px;}
+                            & ul{
+                                margin:0;padding:0;
+                                & li{color: #6C8BA7;list-style: circle;margin-left: 25px;font-size: 16px;line-height:26px;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1199px){
+        & .banner{min-height: 470px;}
+    }
+    @media(max-width:991px){
+        & .banner{min-height: 350px;}
+        & .about-section{
+            & .about-wrap{
+                flex-direction: column;max-width:900px;
+                & .img-wrap{
+                    padding-bottom: 30px;text-align: center;width:100%;
+                }
+                & .content-wrap{
+                    width:100%;max-width:800px;
+                    & .heading{margin-bottom:0px;}
+                    & .text{text-align: justify;margin-top: 0;margin-bottom:16px;color: #6C8BA7;line-height: 25px;}
+                    & .info-wrap{
+                        justify-content:space-between;
+                        & ul{margin:0;}
+                    }
+                }
+            }
+            & .history-wrap{
+                & .head-section{
+                    margin-bottom:50px;
+                    & .title{
+                        & .watermark-title{font-size:150px;transform: translateZ(0px) translateY(34.99742px) !important;}
+                    }
+                }
+                & .struggle-wrap{
+                    flex: 0 0 auto;width: 83.33333333%;margin:0 auto;
+                    & .timeline-wrap{
+                        padding: 0px;padding-right: 10px;padding-left:30px;
+                        & ul{padding:0;margin:0;}
+                        & .timeline-list{
+                            &:nth-child(odd) .year{padding-right:0px;}
+                            &:before{left:2%;}
+                            & .time-item{
+                                padding-bottom: 50px;overflow: hidden;
+                                & .year{width: 100%;margin:0 0 3px;}
+                                &:nth-child(odd) .year{text-align:left;}
+                                &:nth-child(2n) .year{float:right;text-align:left;padding-left:0px;}
+                                & .dot{
+                                    left:0;
+                                    &:after{top:2px;left:10px;}
+                                }
+                                & .info{
+                                    width:100%;
+                                    & p{margin:0;}
+                                }
+                                &:nth-child(odd) .info{float:right;text-align:left;padding-left:0px;}
+                            }
+                        }
+                    }
+                }
+            }
+            & .vision-wrap{
+                flex-direction:column;
+                & .img-wrap{flex: 0 0 auto;width:100%;max-width:900px;text-align:center;}
+                & .content-wrap{
+                    flex: 0 0 auto;width:100%;max-width:900px;
+                }
+            }
+        }
+    }
+    @media(max-width:767px){
+        & .banner{min-height: 300px;}
+        & .history-wrap{
+            & .head-section{
+                margin-bottom:50px;
+                & .title{
+                    & .watermark-title{display:none !important;}
+                }
+            }
+        }
+    }
+    @media(max-width:575px){
+        & .about-section{
+            & .about-wrap{
+                & .content-wrap{
+                    & .heading{font-size: 25px;font-weight: 600;line-height: 46px;}
+                    & .info-wrap{flex-direction: column;}
+                }
+            }
+            & .history-wrap{
+                & .head-section{margin-bottom:30px;}
+                & .struggle-wrap{
+                    width:100%;
+                    & .timeline-wrap{
+                        padding: 0px;padding-right: 10px;padding-left:30px;
+                        & .timeline-list{
+                            &:nth-child(odd) .year{padding-right:0px;}
+                            &:before{left:2%;}
+                            & .time-item{
+                                padding-bottom: 30px;
+                                & .dot{
+                                    left:-4px;
+                                    &:after{top:2px;left:10px;}
+                                }
+                                & .info{
+                                    width:100%;
+                                    & .title{font-size: 20px;}
+                                    & p{margin:0;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .vision-wrap{
+                & .content-wrap{
+                    & .head-wrap{
+                        & .sub-title{padding: 10px 15px;margin: 0 0 10px;}
+                        & .about-title{font-size: 26px;}
+                    }
+                }
+            }
+        }
     }
 `;
 
@@ -94,6 +276,12 @@ const company = () => {
     const breadcrumbs = [
         { name: "About Us", path: "about-us"},
     ];
+    const [openAccordion, setOpenAccordion] = useState(null);
+    const toggleAccordion = (e,accordionId) => {
+        e.preventDefault();
+        setOpenAccordion(openAccordion === accordionId ? null : accordionId);
+    };
+
     return (
         <Layout>
             <Wrap>
@@ -151,6 +339,67 @@ const company = () => {
                                     ))}
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div className="vision-wrap">
+                        <div className="content-wrap">
+                            <div className="head-wrap">
+                                <h6 className="sub-title">Our Foundational Concepts</h6>
+                                <h2 className="about-title">New Idea For <span className="about-text">Success</span> To Help Your Business</h2>
+                            </div>
+                            <div className="accordion-wrap" id="accordion-wrap">
+                                <div className="card">
+                                    <a className={`card-header ${openAccordion === 'heading1' ? '' : 'collapsed'}`} id="heading1" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded={openAccordion === 'heading1' ? 'true' : 'false'} aria-controls="collapse1" onClick={(e) => toggleAccordion(e, 'heading1')}>
+                                        <span className={`${openAccordion === 'heading1' ? 'open' : 'toggle-btn'}`}></span> 
+                                        Vision
+                                    </a>
+                                    <div id="collapse1" className={`collapse ${openAccordion === 'heading1' ? 'show' : ''}`} data-parent="#accordion-wrap">
+                                        <div className="card-body">
+                                            <p>
+                                                To become a globally respected organization by providing best-of-breed digital business solutions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <a className={`card-header ${openAccordion === 'heading2' ? '' : 'collapsed'}`} id="heading2" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded={openAccordion === 'heading2' ? 'true' : 'false'} aria-controls="collapse2" onClick={(e) => toggleAccordion(e, 'heading2')}>
+                                        <span className={`${openAccordion === 'heading2' ? 'open' : 'toggle-btn'}`}></span> 
+                                        Mission
+                                    </a>
+                                    <div id="collapse2" className={`collapse ${openAccordion === 'heading2' ? 'show' : ''}`} data-parent="#accordion-wrap">
+                                        <div className="card-body">
+                                            <p style={{paddingBottom:"15px"}}>
+                                                Believe in fairness, honesty and humbleness towards our customers, employees and society.
+                                            </p>
+                                            <p>
+                                                Develop easy to use but advanced software solutions by using most innovative technologies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <a className={`card-header ${openAccordion === 'heading3' ? '' : 'collapsed'}`} id="heading3" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded={openAccordion === 'heading3' ? 'true' : 'false'} aria-controls="collapse3" onClick={(e) => toggleAccordion(e, 'heading3')}>
+                                        <span className={`${openAccordion === 'heading3' ? 'open' : 'toggle-btn '}`}></span> 
+                                        Core Values
+                                    </a>
+                                    <div id="collapse3" className={`collapse ${openAccordion === 'heading3' ? 'show' : ''}`} data-parent="#accordion-wrap">
+                                        <div className="card-body">
+                                            <ul>
+                                                <li>Respect</li>
+                                                <li>Quality</li>
+                                                <li>Belief</li>
+                                                <li>Satisfaction</li>
+                                                <li>Relationship</li>
+                                                <li>Reliability</li>
+                                                <li>Service</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="img-wrap">
+                            <img src="./images/Fetures.png" alt="about-image" />
                         </div>
                     </div>
                 </div>
