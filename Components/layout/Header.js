@@ -31,7 +31,7 @@ function Header() {
                 <Link href="/" className={`${style.home} ${router.pathname === "/" ? style.active : ""}`}>Home</Link>
                 <Link href="/company" className={`${style.Company} ${router.pathname === "/company" ? style.active : ""}`}>Company</Link>
                 <div className={`${style.Services} ${style.subParent}`} >
-                    <Link href="/services" className={`${style.ServicesNew} ${router.pathname === "/services" ? style.active : ""}`} >Services</Link>
+                    <Link href="/services/android-dev" className={`${style.ServicesNew} ${router.pathname === "/services/android-dev" ? style.active : ""}`} >Services</Link>
                     {(
                         <div className={style.ServicesMain}>
                             <Link href="/services/mobile" className={style.Services1}>Mobile App Development</Link>
