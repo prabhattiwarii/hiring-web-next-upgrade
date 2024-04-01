@@ -13,16 +13,16 @@ useEffect(()=>{
       const endCount=200;
 
 const animate=(timesstamp)=>{
-if(!startTime)startTime=timesstamp;
-const elapsed=timesstamp-startTime;
-const progress=Math.min(elapsed/duration,1);
-const currentCount=Math.floor(progress*endCount);
-setcount(currentCount);
-if(progress<1){
-  requestAnimationFrame(animate)
-};
-setcount();
- } }},[])
+    if(!startTime)startTime=timesstamp;
+    const elapsed=timesstamp-startTime;
+    const progress=Math.min(elapsed/duration,1);
+    const currentCount=Math.floor(progress*endCount);
+    setcount(currentCount);
+    if(progress<1){
+    requestAnimationFrame(animate)
+    };
+    setcount();
+} }},[])
 
   const data = [
     {

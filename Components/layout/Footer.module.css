@@ -33,6 +33,10 @@
     color: #101010;
     margin-bottom: 25px;
 }
+.footerdetails .footerlists,
+.footerdetails .contactlist{
+  padding-left: 17px;
+}
 .footerdetails .footerlists .footerlist{
   margin-bottom: 12px;
   list-style: disc;

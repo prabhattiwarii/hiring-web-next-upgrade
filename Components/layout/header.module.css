@@ -1,7 +1,23 @@
+.mainWrap{
+  width: 100%;
+  position:fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  background-color: white;
+}
+.dark{
+  position:fixed;
+  height: 90.25px;
+  width: 100%;
+}
 
 .navwrap {
   justify-content:space-between;
-  width: 100%;
   display: flex;
   box-sizing: border-box;
   margin: 0 auto;
@@ -10,6 +26,7 @@
   max-width:1280px;
   padding:0 20px;
   align-items: center;
+  width: 100%;
 }
 .companyLogoWrap {
   text-decoration: none;
@@ -27,6 +44,16 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+}
+.navbar a{
+  color: #294762;
+  transition:.3s all;
+}
+.navbar a:hover{
+  color:#1589F1;
+}
+.navbar a.active{
+  color:#1589F1;
 }
 .navbar .home {
   text-decoration: none;

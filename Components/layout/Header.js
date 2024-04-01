@@ -1,50 +1,58 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import style from "./header.module.css";
 import { barIcon, crosIcon } from "@/Helpers/icon";
 
 function Header() {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+    const [sticky, setSticky] = useState(false);
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            window.scrollY > 50 ? setSticky(true) : setSticky(false)
+        })
+    }, [])
     const handleToggleClick = () => {
         setIsMobileNavOpen(!isMobileNavOpen);
     };
+    const router = useRouter(); 
     return (
+        <header className={`${sticky ?style.mainWrap  : style.dark}`}>
         <div className={style.navwrap}>
             <div className={style.companyLogoWrap}>
-                <Link className={style.companyLogoWrap} href="/">C-J<span>Tech</span></Link>
+                <Link href="/" className={style.companyLogoWrap}>C-J<span>Tech</span></Link>
             </div>
-            <div className={`${!isMobileNavOpen ? style.navbar :style.navopens}`}>
+            <div className={`${!isMobileNavOpen ? style.navbar : style.navopens}`}>
                 {isMobileNavOpen &&
                 <div className={style.companyLogoWrap}>
-                    <Link className={style.companyLogoWrap} href="/">C-J<span>Tech</span></Link>
+                    <Link href="/" className={style.companyLogoWrap}>C-J<span>Tech</span></Link>
                 </div>
                 }
-                <Link href="/" className={style.home}>Home</Link>
-                <Link href="/company" className={style.Company}>Company</Link>
-                <div href="/services" className={`${style.Services} ${style.subParent}`} >
-                    <a className={style.ServicesNew} href="/services" >Services</a>
+                <Link href="/" className={`${style.home} ${router.pathname === "/" ? style.active : ""}`}>Home</Link>
+                <Link href="/company" className={`${style.Company} ${router.pathname === "/company" ? style.active : ""}`}>Company</Link>
+                <div className={`${style.Services} ${style.subParent}`} >
+                    <Link href="/services" className={`${style.ServicesNew} ${router.pathname === "/services" ? style.active : ""}`} >Services</Link>
                     {(
                         <div className={style.ServicesMain}>
-                            <Link className={style.Services1} href="mobile">Mobile App Development</Link>
-                            <Link className={style.Services1} href="website">Web Development</Link>
-                            <Link className={style.Services1} href="ui">Ui/Ux Design</Link>
-                            <Link className={style.Services1} href="application">Application Maintence & Support</Link>
-                            <Link className={style.Services1} href="hire">Hire Dedicated Developers</Link>
+                            <Link href="/services/mobile" className={style.Services1}>Mobile App Development</Link>
+                            <Link href="/services/website" className={style.Services1}>Web Development</Link>
+                            <Link href="/services/ui" className={style.Services1}>Ui/Ux Design</Link>
+                            <Link href="/services/application" className={style.Services1}>Application Maintence & Support</Link>
+                            <Link href="/services/hire" className={style.Services1}>Hire Dedicated Developers</Link>
                         </div>
                     )}
                 </div>
-                <Link href="/portfolio" className={style.Portfolio}>Portfolio</Link>
-                <Link href="/career" className={style.Career}>Career</Link>
-                <Link href="/contact" className={style.Contact}>Contact</Link>
-                <Link href="/contact" className={style.Chat}><span>&gt;</span> <div>Lets' Chat</div></Link>
+                <Link href="/portfolio" className={`${style.Portfolio} ${router.pathname === "/portfolio" ? style.active : ""}`}>Portfolio</Link>
+                <Link href="/career" className={`${style.Career} ${router.pathname === "/career" ? style.active : ""}`}>Career</Link>
+                <Link href="/contact" className={`${style.Contact} ${router.pathname === "/contact" ? style.active : ""}`}>Contact</Link>
+                <Link href="/contact" className={`${style.Chat} ${router.pathname === "/contact" ? style.active : ""}`}><span>&gt;</span> <div>Lets' Chat</div></Link>
             </div>
             <button className={style.togglebutton} onClick={handleToggleClick}>
                 {isMobileNavOpen ? <>{crosIcon({width:24,height:24,fill:"#2e2e2e"})}</> : <>{barIcon({width:24,height:24,fill:"#2e2e2e"})}</>}
             </button>
         </div>
+        </header>
     );
 }
+
 export default Header;
-
-
-
