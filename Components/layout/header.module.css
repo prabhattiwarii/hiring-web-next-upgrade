@@ -12,8 +12,9 @@
 }
 .dark{
   position:fixed;
-  height: 90.25px;
   width: 100%;
+  background-color: white;
+  z-index: 9;
 }
 
 .navwrap {
