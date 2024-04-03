@@ -1,7 +1,8 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
+import { figmaIcon, illustratorIcon, invisionStudioIcon, photoshopIcon, sketchIcon, xdIcon, zeplinIcon } from '@/Helpers/icon';
 
 const Wrap = styled.div`
     & .banner{
@@ -23,7 +24,7 @@ const Wrap = styled.div`
                             & img{border-style: none;height: auto;max-width: 100%;vertical-align: middle;}
                         }
                         & .sevice-wrap{
-                            display:flex;flex-wrap:wrap;
+                            display:flex;flex-wrap:wrap;margin-bottom:30px;
                             & .service{
                                 width:50%;position: relative;border: 1px solid #CAE5FF;
                                 & .inner{
@@ -34,6 +35,17 @@ const Wrap = styled.div`
                                     }
                                     & .text{position: relative;font-size: 16px;color: #6C8BA7;margin-top: 15px;line-height:25px;}
                                 }
+                            }
+                        }
+                        & .service-box{
+                            display:flex;flex-wrap:wrap;row-gap:20px;column-gap:20px;
+                            & .box{
+                                width:calc(25% - 38px);text-align: -webkit-center;transition:.3s all;
+                                &:hover{transform: translateY(-8px);}
+                                & .icon{
+                                    width: 100px;height: 100px;margin: 0 0 15px;background: #F5F5F5;border-radius: 5px;display: flex;align-items: center;justify-content: center;
+                                }
+                                & .title{margin-bottom: 1rem;color: #6C8BA7;}
                             }
                         }
                     }
@@ -94,6 +106,9 @@ const Wrap = styled.div`
                             & .sevice-wrap{
                                 & .service{width:100%;}
                             }
+                            & .service-box{
+                                & .box{width:calc(33.33% - 38px);}
+                            }
                         }
                     }
                 }
@@ -108,7 +123,19 @@ const Wrap = styled.div`
                         & .inner-box{
                             & h4{font-size:22px;}
                             & .sevice-wrap{
-                                & .service{width:100%;}
+                                & .service{
+                                    width:100%;
+                                    & .inner{
+                                        padding:30px;
+                                        & h5{
+                                            margin:0 0 20px;
+                                            &::before{left:32px;top: 25px;width: 30px;height: 30px;font-size:17px;}
+                                        }
+                                    }
+                                }
+                            }
+                            & .service-box{
+                                & .box{width:calc(50% - 38px);}
                             }
                         }
                     }
@@ -116,13 +143,21 @@ const Wrap = styled.div`
             }
         }
     }
-
 `
 
 const uiux = () => {
     const breadcrumbs = [
         { name: "UI/UX Customization", path: "/services/ui"},
     ];
+    const techData = [
+        {id:1,name:"Photoshop",icon:photoshopIcon},
+        {id:2,name:"Illustrator",icon:illustratorIcon},
+        {id:3,name:"Figma",icon:figmaIcon},
+        {id:4,name:"XD",icon:xdIcon},
+        {id:5,name:"Sketch",icon:sketchIcon},
+        {id:6,name:"Invision Studio",icon:invisionStudioIcon},
+        {id:7,name:"Zeplin",icon:zeplinIcon},
+    ]
     return (
         <Layout>
             <Wrap>
@@ -151,6 +186,15 @@ const uiux = () => {
                                     <p>
                                     No matter how powerful or innovative your application idea is, without a solid well thought user interface design it won’t achieve success easily. In today’s competitive world only a good user experience will define the future of the app. Weapplinse is a leading User Interface and User Experience Design Company. We understand the power of user experience engineering and bring our application design experience into play to provide you specially crafted UI/UX design and development services that can help your app and idea stand out.
                                     </p>
+                                    <h4>We Hold Expertise in the Following Platforms</h4>
+                                    <div className="service-box">
+                                        {techData.map((item) => (
+                                            <div className="box" key={item.id}>
+                                                <div className="icon">{item.icon({width:50,height:50})}</div>
+                                                <div className="title">{item.name}</div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>

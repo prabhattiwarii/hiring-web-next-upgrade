@@ -40,7 +40,7 @@ const Breadcrumb = ({ breadcrumbs }) => {
                 {breadcrumbs.map((crumb, index) => (<div key={index} className='title'>{crumb.name}</div>))}
                 <ul className='lists'>
                     <li className='list'>
-                        <a className='link' href="/home">Home</a>
+                        <a className='link' href="/">Home</a>
                     </li>
                     {breadcrumbs.map((crumb, index) => (
                         <li key={index} className='list'>{arrowIcon({ width: "14", height: "14",fill:"#9DD1FF"})}
