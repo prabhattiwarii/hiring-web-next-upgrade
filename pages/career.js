@@ -93,7 +93,6 @@ const Wrap = styled.div`
         }
     }
     @media(max-width:767px){
-        & .banner{min-height: 300px;}
         & .offer-section{ 
             padding:50px 20px;
             & .heading{font-size: 20px;line-height: 30px;}
@@ -115,7 +114,6 @@ const Wrap = styled.div`
         }
     }
     @media(max-width:575px){
-        & .banner{min-height: 300px;}
         & .offer-section{ 
             padding:50px 20px;
             & .heading{font-size:18px;}

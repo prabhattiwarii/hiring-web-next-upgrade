@@ -34,8 +34,8 @@ function Header() {
                     <Link href="/services/android-dev" className={`${style.ServicesNew} ${router.pathname === "/services/android-dev" ? style.active : ""}`} >Services</Link>
                     {(
                         <div className={style.ServicesMain}>
-                            <Link href="/services/mobile" className={style.Services1}>Mobile App Development</Link>
-                            <Link href="/services/website" className={style.Services1}>Web Development</Link>
+                            <Link href="/services/android-dev" className={style.Services1}>Mobile App Development</Link>
+                            <Link href="/services/larvel-dev" className={style.Services1}>Web Development</Link>
                             <Link href="/services/ui" className={style.Services1}>Ui/Ux Design</Link>
                             <Link href="/services/application" className={style.Services1}>Application Maintence & Support</Link>
                             <Link href="/services/hire" className={style.Services1}>Hire Dedicated Developers</Link>

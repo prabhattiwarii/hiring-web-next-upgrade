@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/iosbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/uiuxbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -119,16 +119,9 @@ const Wrap = styled.div`
 
 `
 
-const androiddev = () => {
-    const datanew = [
-        { id: 1, title: "High ROI With Lower Costs", desc: "One of the key points of interest of Android application development is the simple accessibility of the Android SDK. The development groups can utilize the material plan from these SDKs to assemble intuitive applications.", },
-        { id: 2, title: "Focus on Multiple Platforms", desc: "The utilization of Java as a programming language makes it simple to port the application to different working frameworks like Symbian and Ubuntu. Along these lines, organizations can focus on different platforms with Android application development.", },
-        { id: 3, title: "Improved Security", desc: "Android P presented a few extra and in-manufactured security features. It will help with the security against malware and infections. Hence, wellbeing and dependability are outstanding advantages of android application development.", },
-        { id: 4, title: "Customization", desc: "Android is an open source platform and offers most extreme customization features to development groups. It is the reason android applications are a well known decision.", }
-    ];
-      
+const uiux = () => {
     const breadcrumbs = [
-        { name: "Android Development", path: "/services/android-dev"},
+        { name: "UI/UX Customization", path: "/services/ui"},
     ];
     return (
         <Layout>
@@ -141,33 +134,23 @@ const androiddev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Unlock Your Business Potential With Highly - Customizable Android App Development Service Equipped With Innovative Approaches &amp; Solutions</h4>
+                                    <h4>UI UX Design Helps The Application To Win The Customers And Provide Them Exactly What They Are Looking For</h4>
                                     <p>
-                                        Cj is popular mobile app development company from India specializes in building professional grade Android applications for its global clients while covering all the segment of Android-based development to offer one-stop shop solutions.
+                                    Building experiences across different mobile and websites. We are a leading UX/UI design Company in India serving different industry sectors with our awesome design services.
                                     </p>
                                     <div className="img-wrap">
-                                        <img class="wrapimagework" src="/images/and_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
+                                        <img class="wrapimagework" src="/images/uiux_img.jpg" alt="ui-ux development"/>
                                     </div>
-                                    <h4>Most Reliable Android App Development Company</h4>
+                                    <h4>The Success Of Any App Depends On The Customer's Usage And Experience. If You Provide A Great Experience To The Customer Then You Win!</h4>
                                     <p>
-                                    The Google Android is a well-known OS platform, possessed by various major smartphones available today. Due to its huge popularity, there is a great hike for Android-based applications in the Google Play/ market. And hence inviting the needs for custom-made Android app development!
+                                    When it comes to website and application development the customer satisfaction plays a major role in the success of that particular app or website. To make it better the user interface(UI) and user experience(UX) should be extraordinary.
                                     </p>
                                     <p>
-                                    Cj is popular mobile app development company from India specializes in building professional grade Android applications for its global clients while covering all the segment of Android-based development to offer one-stop-shop solutions. With our professional excellence, we deliver state-of-the-art Android applications meeting business specifications and client satisfaction. We have gained an immense experience in manifold areas of Android application development such as Android enterprise solution, Android multimedia, business, android game development, travel, utility, Wi-Fi/ GPS development, app maintenance and upgrade, custom Android apps etc.
+                                    There are many apps on play store and the app store but very few become successful, the reason behind them being successful is they have great look and feel. Almost every user is looking for an app or website which is visually appealing, and has an extremely good feel throughout the usage. So it is quite necessary to put a considerable emphasis on UI and UX development.
                                     </p>
                                     <p>
-                                    Our development team holds great expertise in Android SDK, Java, XML, C++, native development tools, Eclipse IDE, framework APIs, Android app tools plug-ins etc. to develop the latest technology and futuristic apps possible. We have extensive experience in Android app development, which makes us capable to bring feasible solution and materialize your ideas into fully functional application. Our aim is not just to provide the feasible solution but to work dedicatedly right from the scratch. Our fervent attitude, ceaseless dedication, and strong business methodology prove us to be exceptional.
+                                    No matter how powerful or innovative your application idea is, without a solid well thought user interface design it won’t achieve success easily. In today’s competitive world only a good user experience will define the future of the app. Weapplinse is a leading User Interface and User Experience Design Company. We understand the power of user experience engineering and bring our application design experience into play to provide you specially crafted UI/UX design and development services that can help your app and idea stand out.
                                     </p>
-                                    <div className="sevice-wrap">
-                                        {datanew.map((item) => (
-                                            <div className="service" key={item.id}>
-                                                <div className="inner">
-                                                    <h5>{item.title}</h5>
-                                                    <div className="text">{item.desc}</div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -175,9 +158,9 @@ const androiddev = () => {
                             <aside className='sidebar'>
                                 <div class="widget-content">
                                     <ul class="service-list">
-                                        <li><a href="#">iOS Development</a></li>
-                                        <li><a href="#">React Native Development</a></li>
-                                        <li><a href="#">Flutter Development</a></li>
+                                        <li><a href="#">Wireframe & Prototype</a></li>
+                                        <li><a href="#">Mobile & App Design</a></li>
+                                        <li><a href="#">Graphics Design</a></li>
                                     </ul>
                                 </div>
                                 <div class="sidebar-widget">
@@ -200,4 +183,4 @@ const androiddev = () => {
       );
 }
 
-export default androiddev
+export default uiux

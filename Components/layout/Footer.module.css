@@ -25,8 +25,10 @@
 .footerdetails .text{
   font-size: 16px;
   text-align: justify;
+  line-height: 26px;
 }
-.footerdetails .detailsheading{
+.footerdetails .detailsheading,
+.footerdetails .detailsheading a{
   font-size: 22px;
     line-height: 40px;
     font-weight: 600;

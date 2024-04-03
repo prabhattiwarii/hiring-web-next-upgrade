@@ -209,7 +209,6 @@ const Wrap = styled.div`
         }
     }
     @media(max-width:767px){
-        & .banner{min-height: 300px;}
         & .history-wrap{
             & .head-section{
                 margin-bottom:50px;

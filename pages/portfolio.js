@@ -82,7 +82,6 @@ const Wrap = styled.div`
         }
     }
     @media(max-width:767px){
-        & .banner{min-height: 300px;}
         & .portfolio-wrap {
             max-width:500px;
             & .work-wrap{

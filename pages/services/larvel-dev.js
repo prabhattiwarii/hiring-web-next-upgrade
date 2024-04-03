@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/iosbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -119,16 +119,16 @@ const Wrap = styled.div`
 
 `
 
-const androiddev = () => {
+const larveldev = () => {
     const datanew = [
-        { id: 1, title: "High ROI With Lower Costs", desc: "One of the key points of interest of Android application development is the simple accessibility of the Android SDK. The development groups can utilize the material plan from these SDKs to assemble intuitive applications.", },
-        { id: 2, title: "Focus on Multiple Platforms", desc: "The utilization of Java as a programming language makes it simple to port the application to different working frameworks like Symbian and Ubuntu. Along these lines, organizations can focus on different platforms with Android application development.", },
-        { id: 3, title: "Improved Security", desc: "Android P presented a few extra and in-manufactured security features. It will help with the security against malware and infections. Hence, wellbeing and dependability are outstanding advantages of android application development.", },
-        { id: 4, title: "Customization", desc: "Android is an open source platform and offers most extreme customization features to development groups. It is the reason android applications are a well known decision.", }
+        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
+        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
+        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
+        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
     ];
       
     const breadcrumbs = [
-        { name: "Android Development", path: "/services/android-dev"},
+        { name: "Larvel Development", path: "/services/larvel-dev"},
     ];
     return (
         <Layout>
@@ -141,22 +141,22 @@ const androiddev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Unlock Your Business Potential With Highly - Customizable Android App Development Service Equipped With Innovative Approaches &amp; Solutions</h4>
+                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
                                     <p>
-                                        Cj is popular mobile app development company from India specializes in building professional grade Android applications for its global clients while covering all the segment of Android-based development to offer one-stop shop solutions.
+                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
                                     </p>
                                     <div className="img-wrap">
-                                        <img class="wrapimagework" src="/images/and_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
+                                        <img class="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
                                     </div>
-                                    <h4>Most Reliable Android App Development Company</h4>
+                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
                                     <p>
-                                    The Google Android is a well-known OS platform, possessed by various major smartphones available today. Due to its huge popularity, there is a great hike for Android-based applications in the Google Play/ market. And hence inviting the needs for custom-made Android app development!
+                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
                                     </p>
                                     <p>
-                                    Cj is popular mobile app development company from India specializes in building professional grade Android applications for its global clients while covering all the segment of Android-based development to offer one-stop-shop solutions. With our professional excellence, we deliver state-of-the-art Android applications meeting business specifications and client satisfaction. We have gained an immense experience in manifold areas of Android application development such as Android enterprise solution, Android multimedia, business, android game development, travel, utility, Wi-Fi/ GPS development, app maintenance and upgrade, custom Android apps etc.
+                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
                                     </p>
                                     <p>
-                                    Our development team holds great expertise in Android SDK, Java, XML, C++, native development tools, Eclipse IDE, framework APIs, Android app tools plug-ins etc. to develop the latest technology and futuristic apps possible. We have extensive experience in Android app development, which makes us capable to bring feasible solution and materialize your ideas into fully functional application. Our aim is not just to provide the feasible solution but to work dedicatedly right from the scratch. Our fervent attitude, ceaseless dedication, and strong business methodology prove us to be exceptional.
+                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
@@ -175,9 +175,9 @@ const androiddev = () => {
                             <aside className='sidebar'>
                                 <div class="widget-content">
                                     <ul class="service-list">
-                                        <li><a href="#">iOS Development</a></li>
-                                        <li><a href="#">React Native Development</a></li>
-                                        <li><a href="#">Flutter Development</a></li>
+                                        <li><a href="#">PHP Development</a></li>
+                                        <li><a href="#">Node jS Development</a></li>
+                                        <li><a href="#">React JS Development</a></li>
                                     </ul>
                                 </div>
                                 <div class="sidebar-widget">
@@ -200,4 +200,4 @@ const androiddev = () => {
       );
 }
 
-export default androiddev
+export default larveldev

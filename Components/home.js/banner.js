@@ -36,13 +36,13 @@ const Banner = () => {
 	];
 
     return (
-        <div className={style.bannerWrap}>
+        <>
             <div className={style.headerwrap}>
                 <div className={style.headsection}>
                     <div className={style.inner}>
                         <div className={style.conversionmain}>We Convert your Idea <br/> into <span> Reality </span></div>
                         <div className={style.conversiondescription}>Do you have any idea? Want to digitize Your business?</div>
-                        <div className={style.conversioninquire}><span>&gt;</span>Inquire Now</div>
+                        <div className={style.conversioninquire} onClick={() => window.location="/contact"}><span>&gt;</span>Inquire Now</div>
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@ const Banner = () => {
 					))}
 				</div>
 			</div>
-        </div>
+        </>
     );
 };
 
