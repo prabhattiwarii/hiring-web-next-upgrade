@@ -212,7 +212,7 @@ const uiux = () => {
                                         <div class="title">
                                             Have Any Project <span>or work together ?</span>
                                         </div>
-                                        <a href="#" class="contact-btn">Contact us</a>
+                                        <a href="/contact" class="contact-btn">Contact us</a>
                                         <div class="phone">
                                             Let's Discuss : <a href="">@cj-technology</a>
                                         </div>

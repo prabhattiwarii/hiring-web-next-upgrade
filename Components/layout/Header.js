@@ -37,8 +37,8 @@ function Header() {
                             <Link href="/services/android-dev" className={style.Services1}>Mobile App Development</Link>
                             <Link href="/services/larvel-dev" className={style.Services1}>Web Development</Link>
                             <Link href="/services/ui" className={style.Services1}>Ui/Ux Design</Link>
-                            <Link href="/services/application" className={style.Services1}>Application Maintence & Support</Link>
-                            <Link href="/services/hire" className={style.Services1}>Hire Dedicated Developers</Link>
+                            <Link href="/services/application-dev" className={style.Services1}>Application Maintence & Support</Link>
+                            <Link href="/services/hire-dev" className={style.Services1}>Hire Dedicated Developers</Link>
                         </div>
                     )}
                 </div>
