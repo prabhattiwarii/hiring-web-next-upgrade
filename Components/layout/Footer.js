@@ -11,11 +11,11 @@ const Footer = () => {
                 <div className={style.footerdetails}>
                     <div className={style.detailsheading}>IT Services</div>
                     <ul className={style.footerlists}>
-                        <li className={style.footerlist}><a href="#">Mobile App Development</a></li>
-                        <li className={style.footerlist}><a href="#">Web Developer</a></li>
-                        <li className={style.footerlist}><a href="#">UI/UX Design</a></li>
-                        <li className={style.footerlist}><a href="#">Application Maintenance & Support</a></li>
-                        <li className={style.footerlist}><a href="#">Hire Dedicated Developers</a></li>
+                        <li className={style.footerlist}><a href="/services/android-dev">Mobile App Development</a></li>
+                        <li className={style.footerlist}><a href="/services/larvel-dev">Web Developer</a></li>
+                        <li className={style.footerlist}><a href="/services/ui">UI/UX Design</a></li>
+                        <li className={style.footerlist}><a href="/services/application-dev">Application Maintenance & Support</a></li>
+                        <li className={style.footerlist}><a href="/services/hire-dev">Hire Dedicated Developers</a></li>
                     </ul>
                 </div>
                 <div className={style.footerdetails}>
