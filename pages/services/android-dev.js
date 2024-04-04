@@ -140,6 +140,16 @@ const Wrap = styled.div`
                         }
                     }
                 }
+                & .right-section{
+                    & .sidebar{
+                        & .sidebar-widget{
+                            & .widget-content{
+                                padding:30px;
+                                & .contact-btn{padding: 14px 30px;color: #fff;font-size:16px;}
+                            }
+                        }
+                    }
+                }
             }
         }
     }

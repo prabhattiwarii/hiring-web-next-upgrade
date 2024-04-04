@@ -1,136 +1,8 @@
+import React, { useState } from 'react';
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react';
 import styled from 'styled-components';
-
-
-const datanew = [
-    { id: 1, title: "Custom iOS App Development", main: "We are proficient at building custom iOS applications that address customers' issues and pressed with present day highlights. You can share your application thoughts and we will transform it into a protected, mobile, and strong iOS application.", },
-    { id: 2, title: "iOS App Upgrade", main: "We are proficient at building custom iOS applications that address customers' issues and pressed with present day highlights. You can share your application thoughts and we will transform it into a protected, mobile, and strong iOS application.", },
-    { id: 3, title: "iOS App Testing/Portability", main: "We are proficient at building custom iOS applications that address customers' issues and pressed with present day highlights. You can share your application thoughts and we will transform it into a protected, mobile, and strong iOS application.", },
-    { id: 4, title: "Irresistible Features", main: "We are proficient at building custom iOS applications that address customers' issues and pressed with present day highlights. You can share your application thoughts and we will transform it into a protected, mobile, and strong iOS application.", }
-];
-
-const maindata1 = [
-    { id: 1, title: "Hire Dedicated Developers ", image: " ./images/1.png", description: " Hire our iOS app developers to build high-performing iOS apps for your business." },
-    { id: 1, title: "Hire Dedicated Developers ", image: " ./images/1.png", description: "Hire our iOS app developers to build high-performing iOS apps for your business." },
-    { id: 1, title: "Hire Dedicated Developers ", image: " ./images/1.png", description: "Hire our iOS app developers to build high-performing iOS apps for your business." },
-    { id: 1, title: "Hire Dedicated Developers ", image: " ./images/1.png", description: 'Hire our iOS app developers to build high-performing iOS apps for your business.' },
-    { id: 1, title: "Hire Dedicated Developers ", image: " ./images/1.png", description: "Hire our iOS app developers to build high-performing iOS apps for your business." },
-];
-
-
-const maindata = [
-    {
-        id: 1,
-        title: "Photoshop",
-        main:
-            <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-                <g>
-                    <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                    <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                    <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                    <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-                </g>
-                <defs>
-                    <clipPath id="clip0">
-                        <rect width="100" height="98.4252" />
-                    </clipPath>
-                </defs>
-            </svg>
-    },
-
-    {
-        id: 2, title: " Illustrator", main: <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-            <g>
-                <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-            </g>
-            <defs>
-                <clipPath id="clip0">
-                    <rect width="100" height="98.4252" />
-                </clipPath>
-            </defs>
-        </svg>
-    },
-    {
-        id: 3, title: " Figma", main: <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-            <g>
-                <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-            </g>
-            <defs>
-                <clipPath id="clip0">
-                    <rect width="100" height="98.4252" />
-                </clipPath>
-            </defs>
-        </svg>
-    },
-    {
-        id: 4, title: " XD", main: <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-            <g>
-                <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-            </g>
-            <defs>
-                <clipPath id="clip0">
-                    <rect width="100" height="98.4252" />
-                </clipPath>
-            </defs>
-        </svg>
-    },
-    {
-        id: 2, title: " Illustrator", main: <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-            <g>
-                <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-            </g>
-            <defs>
-                <clipPath id="clip0">
-                    <rect width="100" height="98.4252" />
-                </clipPath>
-            </defs>
-        </svg>
-    },
-    {
-        id: 3, title: " Figma", main: <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-            <g>
-                <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-            </g>
-            <defs>
-                <clipPath id="clip0">
-                    <rect width="100" height="98.4252" />
-                </clipPath>
-            </defs>
-        </svg>
-    },
-    {
-        id: 4, title: " XD", main: <svg width="70" height="99" viewBox="0 0 100 99" fill="none" >
-            <g>
-                <path d="M0.00695801 0H99.9934V98.4252H0.00695801V0Z" fill="#F5F5F5" />
-                <path d="M7.95862 7.82697H92.0419V90.5982H7.95862V7.82697Z" fill="#F5F5F5" />
-                <path d="M24.1695 27.7406C24.1695 27.7406 30.4913 27.5741 35.6953 27.5741C40.9539 27.5741 44.7034 28.8126 47.2207 30.9889C49.6267 33.0455 51.2492 36.5514 51.2492 40.5425C51.2492 44.5336 50.018 47.7993 47.7796 50.0954C44.8704 53.0585 41.4802 54.8125 35.6953 55.0551C34.0972 55.1221 32.618 55.1381 32.618 55.1381V68.1116H24.1692L24.1695 27.7406V27.7406ZM32.6177 47.9504C33.5356 48.0398 34.1108 47.9968 35.4713 47.9805C40.0034 47.9261 42.8 45.1672 42.8 40.9949C42.8 37.2468 40.494 34.1692 36.1432 34.0097C34.4091 33.9463 32.6177 34.0097 32.6177 34.0097V47.9504V47.9504Z" fill="#252B33" />
-                <path d="M54.4734 59.0735C56.1762 60.1194 60.1943 61.6859 62.9332 61.6859C65.7315 61.6859 66.887 60.6987 66.887 59.1596C66.887 57.6184 65.9745 55.9996 62.506 54.8292C56.3605 52.7342 53.9871 50.2265 54.0488 46.7166C54.0488 41.0476 58.7941 36.797 66.1565 36.797C69.6247 36.797 72.3953 37.9321 74.219 38.8556V45.6593C72.8792 44.9193 69.0161 43.2671 66.4611 43.2671C64.2084 43.2671 62.9316 44.1912 62.9316 45.73C62.9316 47.1473 64.0884 47.8867 67.7389 49.1812C73.3965 51.1524 75.7698 54.0471 75.8298 58.4829C75.8298 64.0898 71.5124 68.5483 62.9316 68.2777C59.9866 68.185 56.7241 67.0196 54.4727 65.7891L54.4734 59.0735V59.0735Z" fill="#252B33" />
-            </g>
-            <defs>
-                <clipPath id="clip0">
-                    <rect width="100" height="98.4252" />
-                </clipPath>
-            </defs>
-        </svg>
-    }
-];
+import { awsIcon, cobjective, figmaIcon, firebaseIcon, flutterIcon, htmlIcon, illustratorIcon, invisionStudioIcon, javaIcon, kotlinIcon, lavrvelIcon, mongoIcon, mysqlIcon, nodeIcon, phoneIcon, photoshopIcon, postsqlIcon, reactIcon, sketchIcon, swiftIcon, xdIcon, zeplinIcon } from '@/Helpers/icon';
 
 const Wrap = styled.div`
     & .banner{
@@ -207,28 +79,96 @@ const Wrap = styled.div`
         & .container{
             max-width:1280px;width:100%;margin:0 auto;box-sizing:border-box;padding:0 20px;
             & .head-sction{
+                text-align:center;
                 & h2{
-                    font-size: 30px;color: #294762;font-weight: 300;margin:0 0 15px;
+                    font-size: 30px;color: #294762;font-weight: 300;margin:0 0 20px;
                     & span{font-weight:700;}
                 }
             }
             & .info-wrap{
-                display:flex;flex-wrap:wrap;justify-content:center;gap:40px 20px;
+                display:flex;flex-wrap:wrap;justify-content:center;gap:20px;
                 & .info{
-                    width:calc(33.33% - 14px);
+                    width:calc(20% - 16px);
                     & .inner{
-                        display:flex;gap:10px;align-items:center;background-color: #fff;padding: 20px;border-radius: 5px;box-shadow: 0px 12px 42px rgb(20 140 240 / 0%), 11px 6px 25px rgb(18 162 241 / 15%);border-top: 5px solid #148ef0;transition: all 0.3s ease-out 0s;min-height: 105px;
+                        display:flex;flex-direction:column;align-items:center;background-color: #f4f8fc;padding: 20px;min-height: 105px;
                         & .icon{
-                            flex: 0 0 60px;
+                            width: 100px;height: 100px;position: relative;transition: .5s;border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;margin-left: auto;margin-right: auto;margin-bottom: 25px;
+                            justify-content: center;align-items: center;display:flex;
                             & img{transition: all 1s ease;border-style: none;height: auto;max-width: 100%;vertical-align: middle;}
+                            &.ig1{background: #60C9FE;}
+                            &.ig2{background: #969AFF;}
+                            &.ig3{background: #FF8296;}
+                            &.ig4{background: #FFA164;}
+                            &.ig5{background: #67D6BC;}
                         }
-                        & .text{font-weight: 500;font-size: 15px;line-height: 22px;text-align: left;color: #6C8BA7;align-self: center}
+                        & .text{font-weight: 600;font-size: 16px;line-height: 22px;color: #294762;margin-bottom: 0.5rem;}
                         &:hover{
-                            & .icon{
-                                & img{transform: rotateY(360deg);}
-                            }
+                            background-color: #fff;box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.1), 0 30px 60px -30px rgba(107, 124, 147, 0.15);
+                            & .icon{border-radius: 50%;}
                         }
                     }
+                }
+            }
+        }
+    }
+    & .dev-wrap{
+        padding:60px 0;
+        & .container{
+            max-width:1280px;width:100%;margin:0 auto;box-sizing:border-box;padding:0 20px;
+            & .head-sction{
+                text-align:center;padding:0 0 30px;
+                & h6{background-color: #EBF5FF;padding: 10px 30px;display: inline-block;border-radius: 10px;font-size: 18px;font-weight: 600;color: #1589F1;margin:0 0 15px;}
+            }
+            & .info-wrap{
+                display:flex;flex-wrap:wrap;justify-content:center;gap:20px;
+                & .info{
+                    width:calc(25% - 15px);text-align: center;padding: 30px 10px;box-shadow: 0 10px 30px rgb(0 0 0 / 7%);margin-bottom: 30px;border: 1px solid transparent;transition: .5s;display: flex;align-items: center;flex-direction: column;
+                    & .inner{
+                        & .icon{
+                            width: 91px;height: 91px;background: #F0F8FF;border-radius: 50%;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;
+                            & img{border-style: none;height: auto;max-width: 100%;vertical-align: middle;}
+                        }
+                        & .title{margin-bottom: 10px;font-size: 16px;font-weight: 600;color: #294762;}
+                        & .text{font-size: 15px;color: #6C8BA7;line-height:26px;min-height: 150px;}
+                        & .btn{background-image: linear-gradient(to right, #00549F, #0a87f7, #04befe, #3f86ed);box-shadow: 0 4px 15px 0 rgb(21 143 241 / 36%);cursor:pointer;border:none;width: 165px;
+                            height: 45px;font-size: 16px;font-weight: 600;color: #fff;text-align: center;background-size: 300% 100%;border-radius: 10px;}
+                    }
+                }
+            }
+        }
+    }
+    & .tech-wrap{
+        padding:60px 0;
+        & .container{
+            max-width:1280px;width:100%;margin:0 auto;box-sizing:border-box;padding:0 20px;
+            & .head-sction{
+                text-align:center;padding:0 0 30px;
+                & h6{background-color: #EBF5FF;padding: 10px 30px;display: inline-block;border-radius: 10px;font-size: 18px;font-weight: 600;color: #1589F1;margin:0 0 15px;}
+            }
+            & .swap-section{
+                display: flex;align-items: center;justify-content: center;margin:0 0 50px;flex-wrap: wrap;row-gap:10px;
+                & .btn{
+                    position: relative;border: none;text-decoration: none;border-radius: 0px !important;padding: 10px 0px;margin: 0 20px !important;outline: 0;line-height: normal;background: transparent;font-weight: 400;font-size: 20px;
+                    color: #6C8BA7; cursor: pointer;
+                    &:after{content: "";position: absolute;top: 40px;left: 0;height: 2px;width: 0;background: #294762;transition: width 0.5s ease-in-out;}
+                    &.active{
+                        color: #294762;border-color: #dee2e6 #dee2e6 #fff;
+                        &:after{width: 100%;}
+                    }
+                    &:hover{
+                        &:after{width: 100%;}
+                    }
+                }
+            }
+            & .support-wrap{
+                display:flex;flex-wrap:wrap;row-gap:20px;column-gap:30px;justify-content: center;
+                & .box{
+                    text-align: -webkit-center;transition:.3s all;
+                    &:hover{transform: translateY(-8px);}
+                    & .icon{
+                        width: 100px;height: 100px;margin: 0 0 15px;background: #F5F5F5;border-radius: 5px;display: flex;align-items: center;justify-content: center;
+                    }
+                    & .title{margin-bottom: 1rem;color: #6C8BA7;}
                 }
             }
         }
@@ -245,6 +185,31 @@ const Wrap = styled.div`
                 }
             }
         }
+        & .process-wrap{
+            & .container{
+                & .info-wrap{
+                    & .info{width:calc(33.33% - 14px);}
+                }
+            }
+        }
+        & .dev-wrap{
+            & .container{
+                & .info-wrap{
+                    & .info{width:calc(33.33% - 14px);}
+                }
+            }
+        }
+        & .tech-wrap{
+            padding:40px 0;
+            & .container{
+                & .swap-section{
+                    & .btn{
+                        font-size:15px;
+                        &:after{top:30px;}
+                    }
+                }
+            }
+        }
     }
     @media(max-width:767px){
         & .section-app-dev{
@@ -252,13 +217,41 @@ const Wrap = styled.div`
             & .container{
                 flex-direction:column;
                 & .content-wrap{
-                    padding:0;
+                    padding:0 !important;
                     & .conversioninquire{
                         & span{font-size:24px;height:40px;width:40px;}
                     }
                 }
-                & .img-wrap{padding:0;}
+                & .image-wrap{padding:0;}
                 & .image-wrap-1{padding:0;margin-bottom: 30px;}
+            }
+        }
+        & .process-wrap{
+            padding:40px 0;
+            & .container{
+                & .info-wrap{
+                    & .info{width:calc(50% - 10px);}
+                }
+            }
+        }
+        & .dev-wrap{
+            padding:40px 0;
+            & .container{
+                & .info-wrap{
+                    & .info{width:calc(50% - 10px);}
+                }
+            }
+        }
+        & .tech-wrap{
+            padding:40px 0;
+            & .container{
+                & .swap-section{
+                    margin:0 0 30px;
+                    & .btn{
+                        font-size:15px;
+                        &:after{top:30px;}
+                    }
+                }
             }
         }
     }
@@ -291,10 +284,36 @@ const Wrap = styled.div`
                 }
             }
         }
+        & .process-wrap{
+            & .container{
+                & .head-sction{
+                    margin:0 0 30px;
+                    & h2{font-size:22px;}
+                }
+                & .info-wrap{
+                    gap:20px;
+                    & .info{width:100%;}
+                }
+            }
+        }
+        & .dev-wrap{
+            & .container{
+                & .head-sction{
+                    margin:0;
+                    & h2{font-size:22px;}
+                }
+                & .info-wrap{
+                    gap:20px;
+                    & .info{width:100%;}
+                }
+            }
+        }
+        
     }
 `;
 
 const hiredev = () => {
+    const [showList, setShowList] = useState("mobile-technology");
     const breadcrumbs = [
         { name: "Hire Dedicated Developers", path: "/services/hire-dev"},
     ];
@@ -304,6 +323,62 @@ const hiredev = () => {
         {id:3,about:"Using diverse communication channels for friendly client interaction..",img:"/images/homeimg_6.png"},
         {id:4,about:"Focus on Quality Driven Processes.",img:"/images/img__4.png"},
         {id:5,about:"On Time Project Competition.",img:"/images/img__5.png"}
+    ]
+    const processData = [
+        {id:1,about:"Post Your Inquiry",img:"/images/process_1.png",cls:"ig1"},
+        {id:2,about:"Share Required Skills",img:"/images/process_2.png",cls:"ig2"},
+        {id:3,about:"Interview",img:"/images/process_3.png",cls:"ig3"},
+        {id:4,about:"Engagement Terms",img:"/images/process_4.png",cls:"ig4"},
+        {id:5,about:"Get Started",img:"/images/process_5.png",cls:"ig5"}
+    ]
+    const dev = [
+        { id: 1, title: "Hire iOS App Developers", image: "/images/1.png", description: "Hire our iOS app developers to build high-performing iOS apps for your business." },
+        { id: 2, title: "Hire Android App Developers", image: "/images/1.png", description: "Take a business to a new level by choosing Top Android App Development Company Designed and powered by Best app Developers." },
+        { id: 3, title: "Hire React Native App Developers", image: "/images/job2.jpg", description: "Hire React Native developers at an economical price from our large pool of skilled professionals that leverage the ideal roadmap to business application success." },
+        { id: 4, title: "Hire Swift App Developers", image: "/images/1.png", description: 'Need a better option for developing iOS apps? Connect with our Swift experts.' },
+        { id: 5, title: "Hire Flutter App Developers", image: "/images/job1.jpg", description: "We have the best flutter team to help you experience the best app development." },
+        { id: 6, title: "Hire Kotlin App Developers", image: "/images/1.png", description: "Our Kotlin developers are eligible in improving operational efficiencies and cost structures of businesses through most powerful mobile applications for Android native solution." },
+        { id: 7, title: "Hire Laravel Developers", image: "/images/1.png", description: "Hire our experienced Laravel developers to create high-end web applications as per your requirement." },
+        { id: 8, title: "Hire Node JS Developers", image: "/images/1.png", description: "Are you looking for hire top Node.js developers at affordable prices? At Weapplinse you can get dedicated Node.js developers." },
+        { id: 9, title: "Hire React JS Developers", image: "/images/job2.jpg", description: "Coordinate talented and prepared ReactJS App Developers of Weapplinse Technology to use untouchable ReactJS improvement that benefits independent of your business size and area." },
+        { id: 10, title: "Hire UI/UX Designer", image: "/images/1.png", description: "Hire Our proficient UI/UX Designer to Surge up your business to a Different Level With Exceptional Designs." },
+    ];
+    const tech=[
+        {id:1,title:"Mobile Technology",slug:"mobile-technology",child:[
+            {id:20,name:"Objective-C",icon:cobjective,},
+            {id:21,name:"Swift",icon:swiftIcon},
+            {id:22,name:"Flutter",icon:flutterIcon},
+            {id:23,name:"React Native",icon:reactIcon},
+            {id:24,name:"Kotlin",icon:kotlinIcon},
+            {id:25,name:"Java",icon:javaIcon},
+        ]},
+        {id:2,title:"Web Technology",slug:"web-technology",child:[
+            {id:26,name:"PHP",icon:phoneIcon},
+            {id:27,name:"Laravel",icon:lavrvelIcon},
+            {id:28,name:"Node.Js",icon:nodeIcon},
+            {id:29,name:"React.JS",icon:reactIcon},
+            {id:30,name:"HTML 5",icon:htmlIcon},
+        ]},
+        {id:3,title:"Cloud",slug:"cloud",child:[
+            {id:31,name:"Amazon AWS",icon:awsIcon},
+            {id:32,name:"Google Cloud",icon:lavrvelIcon},
+            {id:33,name:"Digital Ocean",icon:nodeIcon},
+            {id:34,name:"Firebase",icon:firebaseIcon}
+        ]},
+        {id:4,title:"Database",slug:"databse",child:[
+            {id:51,name:"MySQl",icon:mysqlIcon},
+            {id:52,name:"PostgreSQL",icon:postsqlIcon},
+            {id:53,name:"Mongo DB",icon:mongoIcon}
+        ]},
+        {id:5,title:"UI/UX Design",slug:"ui/ux-design",child:[
+            {id:35,name:"Photoshop",icon:photoshopIcon},
+            {id:36,name:"Illustrator",icon:illustratorIcon},
+            {id:37,name:"Figma",icon:figmaIcon},
+            {id:38,name:"XD",icon:xdIcon},
+            {id:39,name:"Sketch",icon:sketchIcon},
+            {id:40,name:"Invision Studio",icon:invisionStudioIcon},
+            {id:41,name:"Zeplin",icon:zeplinIcon}
+        ]}
     ]
     return (
         <Layout>
@@ -373,10 +448,10 @@ const hiredev = () => {
                             <h2>Hire Expert Developer<span> - A Simplistic & Flexible Process</span></h2>
                         </div>
                         <div className="info-wrap">
-                            {data.map((item) => (
+                            {processData.map((item) => (
                                 <div className="info" key={item.id}>
                                     <div className="inner">
-                                        <div className="icon">
+                                        <div className={`icon ${item.cls}`}>
                                             <img src={item.img} alt="" />
                                         </div>
                                         <div className="text">{item.about}</div>
@@ -384,6 +459,50 @@ const hiredev = () => {
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </div>
+                <div className="dev-wrap">
+                    <div className="container">
+                        <div className="head-sction">
+                            <h6>Highly Qualified and Dedicated Developers For Hire</h6>
+                        </div>
+                        <div className="info-wrap">
+                            {dev.map((item) => (
+                                <div className="info" key={item.id}>
+                                    <div className="inner">
+                                        <div className="icon">
+                                            <img src={item.image} alt="" />
+                                        </div>
+                                        <div className="title">{item.title}</div>
+                                        <div className="text">{item.description}</div>
+                                        <button className="btn" onClick={() => window.location ="/contact"} type='button'>Hire Developer</button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="tech-wrap">
+                    <div className="container">
+                        <div className="head-sction">
+                            <h6>We Hold Expertise in the Following Platforms</h6>
+                        </div>
+                        <div className="swap-section">
+                            {tech.map((category) => (
+                                <button key={category.id} onClick={() => setShowList(category.slug)} 
+                                className={`btn ${showList === category.slug ? 'active': ''}`}>
+                                    {category.title}
+                                </button>
+                            ))}
+                        </div>
+                        <div className="support-wrap">
+                            {showList && tech.find((category) => category.slug === showList)?.child.map((item) => (
+                                <div className="box" key={item.id}>
+                                <div className="icon">{item.icon({width:50,height:50})}</div>
+                                <div className="title">{item.name}</div>
+                            </div>
+                        ))}
+                    </div>
                     </div>
                 </div>
             </Wrap>

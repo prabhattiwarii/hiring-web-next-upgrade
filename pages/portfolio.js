@@ -88,14 +88,17 @@ const Wrap = styled.div`
                 & .work-item {width:100%;margin:0 0 20px;}
             }
             & .portfolio-filter{
-                & .btn{margin: 5px;margin-right: 0px;
-                    margin-bottom: 10px;
-                }}
+                & .btn{margin: 5px;margin-right: 0px;margin-bottom: 10px;}
             }
         }
     }
     @media(max-width:576px){
         & .portfolio-wrap {
+            & .work-section{
+                & .head-section{
+                    & .sub-title{font-size:22px;line-height:32px;}
+                }
+            }
             & .portfolio-filter{
                 & .btn{margin-right: 0px;margin-bottom: 10px;}
             }

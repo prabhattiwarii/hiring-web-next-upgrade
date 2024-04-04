@@ -222,7 +222,7 @@ const Wrap = styled.div`
         & .about-section{
             & .about-wrap{
                 & .content-wrap{
-                    & .heading{font-size: 25px;font-weight: 600;line-height: 46px;}
+                    & .heading{font-size:22px;font-weight: 600;line-height:32px;}
                     & .info-wrap{flex-direction: column;}
                 }
             }
@@ -231,10 +231,10 @@ const Wrap = styled.div`
                 & .struggle-wrap{
                     width:100%;
                     & .timeline-wrap{
-                        padding: 0px;padding-right: 10px;padding-left:30px;
+                        padding: 0px;padding-right:0px;padding-left:30px;
                         & .timeline-list{
                             &:nth-child(odd) .year{padding-right:0px;}
-                            &:before{left:2%;}
+                            &:before{left:3%;}
                             & .time-item{
                                 padding-bottom: 30px;
                                 & .dot{
@@ -255,7 +255,7 @@ const Wrap = styled.div`
                 & .content-wrap{
                     & .head-wrap{
                         & .sub-title{padding: 10px 15px;margin: 0 0 10px;}
-                        & .about-title{font-size: 26px;}
+                        & .about-title{font-size:22px;}
                     }
                 }
             }

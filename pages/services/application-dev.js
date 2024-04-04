@@ -81,8 +81,8 @@ const Wrap = styled.div`
             padding:40px 0 0;
             & .container{
                 flex-direction:column;
-                & .content-wrap{padding:0;}
-                & .img-wrap{padding:0;}
+                & .content-wrap{padding:0 !important;}
+                & .img-wrap{padding:0 !important;}
             }
         }
         & .support-section{
