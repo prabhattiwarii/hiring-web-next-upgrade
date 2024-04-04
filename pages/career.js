@@ -217,8 +217,8 @@ const Career = () => {
                                     <div className='position'>{item.position}</div>
                                 </div>
                                 {item.require && (
-                                    <div class="job-type">
-                                        <span class="urgent-hiring">{item.require}</span>
+                                    <div className="job-type">
+                                        <span className="urgent-hiring">{item.require}</span>
                                     </div>
                                 )}
                                 <button className='apply-btn' type='button'>{item.button}</button>

@@ -189,7 +189,7 @@ const androiddev = () => {
                                         Cj is popular mobile app development company from India specializes in building professional grade Android applications for its global clients while covering all the segment of Android-based development to offer one-stop shop solutions.
                                     </p>
                                     <div className="img-wrap">
-                                        <img class="wrapimagework" src="/images/and_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
+                                        <img className="wrapimagework" src="/images/and_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
                                     </div>
                                     <h4>Most Reliable Android App Development Company</h4>
                                     <p>
@@ -225,20 +225,20 @@ const androiddev = () => {
                         </div>
                         <div className="right-section">
                             <aside className='sidebar'>
-                                <div class="widget-content">
-                                    <ul class="service-list">
+                                <div className="widget-content">
+                                    <ul className="service-list">
                                         <li><a href="#">iOS Development</a></li>
                                         <li><a href="#">React Native Development</a></li>
                                         <li><a href="#">Flutter Development</a></li>
                                     </ul>
                                 </div>
-                                <div class="sidebar-widget">
-                                    <div class="widget-content" style={{backgroundImage:"url(/images/pattern.png)"}}>
-                                        <div class="title">
+                                <div className="sidebar-widget">
+                                    <div className="widget-content" style={{backgroundImage:"url(/images/pattern.png)"}}>
+                                        <div className="title">
                                             Have Any Project <span>or work together ?</span>
                                         </div>
-                                        <a href="/contact" class="contact-btn">Contact us</a>
-                                        <div class="phone">
+                                        <a href="/contact" className="contact-btn">Contact us</a>
+                                        <div className="phone">
                                             Let's Discuss : <a href="">@cj-technology</a>
                                         </div>
                                     </div>

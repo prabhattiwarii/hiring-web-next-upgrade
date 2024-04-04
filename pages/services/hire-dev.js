@@ -393,7 +393,7 @@ const hiredev = () => {
                                 <h6>Hire Dedicated Developers</h6>
                                 <h2>Hire Dedicated Resources To Reach<span> New Business Heights</span></h2>
                             </div>
-                            <h5 class="sub-head">Looking to perfect the balance between cost, time &amp; quality? </h5>
+                            <h5 className="sub-head">Looking to perfect the balance between cost, time &amp; quality? </h5>
                             <p className='text'>Hire dedicated developers from Weapplinse will be the best option to develop your business website or applications. Being a leading enterprise, Weapplinse offers you tailored solutions. Hiring dedicated developers to manage the entire development cycle of your project. When you choose us, you get trust of a brand, Surat's top Dedicated Development team, 7+ years of experience, strict NDA terms & complete peace of mind.</p>
                         </div>
                         <div className="image-wrap">

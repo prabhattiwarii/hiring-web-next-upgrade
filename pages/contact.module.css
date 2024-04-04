@@ -16,6 +16,7 @@
 .contactwrap {
   display: flex;
   gap: 35px;
+  padding:100px 0 0;
 }
 
 .contactinfo {
@@ -60,6 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 36px;
 }
 
 .heading {
@@ -176,6 +178,11 @@
   margin: 0;
 }
 
+@media(max-width:991px){
+  .contactwrap{
+    padding: 60px 0 0;
+  }
+}
 @media (max-width: 767px) {
   .contactwrap {
       flex-direction: column-reverse;

@@ -158,7 +158,7 @@ const Banner = () => {
                     <div className={style.boxwrap}>
                         {achivementData.map((item) => (
                             <div className={`${style.box} ${item.id%2 ==0  ? style.od : ""}`} key={item.id}>
-                                <div className={style.iconwrap} style={{ background: item.bg, boxShadow: item.shadow }}>
+                                <div className={style.iconwrap} style={{background:item.bg,boxShadow:item.shadow}}>
                                     <img src={item.image} alt="img"/>
                                 </div>
                                 <div className={style.boxa}>{item.title}</div>

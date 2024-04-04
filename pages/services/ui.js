@@ -184,7 +184,7 @@ const uiux = () => {
                                     Building experiences across different mobile and websites. We are a leading UX/UI design Company in India serving different industry sectors with our awesome design services.
                                     </p>
                                     <div className="img-wrap">
-                                        <img class="wrapimagework" src="/images/uiux_img.jpg" alt="ui-ux development"/>
+                                        <img className="wrapimagework" src="/images/uiux_img.jpg" alt="ui-ux development"/>
                                     </div>
                                     <h4>The Success Of Any App Depends On The Customer's Usage And Experience. If You Provide A Great Experience To The Customer Then You Win!</h4>
                                     <p>
@@ -210,20 +210,20 @@ const uiux = () => {
                         </div>
                         <div className="right-section">
                             <aside className='sidebar'>
-                                <div class="widget-content">
-                                    <ul class="service-list">
+                                <div className="widget-content">
+                                    <ul className="service-list">
                                         <li><a href="#">Wireframe & Prototype</a></li>
                                         <li><a href="#">Mobile & App Design</a></li>
                                         <li><a href="#">Graphics Design</a></li>
                                     </ul>
                                 </div>
-                                <div class="sidebar-widget">
-                                    <div class="widget-content" style={{backgroundImage:"url(/images/pattern.png)"}}>
-                                        <div class="title">
+                                <div className="sidebar-widget">
+                                    <div className="widget-content" style={{backgroundImage:"url(/images/pattern.png)"}}>
+                                        <div className="title">
                                             Have Any Project <span>or work together ?</span>
                                         </div>
-                                        <a href="/contact" class="contact-btn">Contact us</a>
-                                        <div class="phone">
+                                        <a href="/contact" className="contact-btn">Contact us</a>
+                                        <div className="phone">
                                             Let's Discuss : <a href="">@cj-technology</a>
                                         </div>
                                     </div>
