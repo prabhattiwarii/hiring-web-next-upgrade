@@ -3,10 +3,11 @@ import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
 import { androidIcon, firebaseIcon, javaIcon, kotlinIcon, xmlIcon } from '@/Helpers/icon';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/iosbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/andbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -227,9 +228,9 @@ const androiddev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
-                                        <li><a href="#">iOS Development</a></li>
-                                        <li><a href="#">React Native Development</a></li>
-                                        <li><a href="#">Flutter Development</a></li>
+                                        <li><Link href="/services/ios-dev">iOS Development</Link></li>
+                                        <li><Link href="/services/react-native-dev">React Native Development</Link></li>
+                                        <li><Link href="/services/flutter-dev">Flutter Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">

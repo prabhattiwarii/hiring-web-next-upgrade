@@ -1,14 +1,13 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
-import { cssIcon, jsIcon, lavrvelIcon, mysqlIcon, htmlIcon } from '@/Helpers/icon';
+import { codeigniterIcon, lavrvelIcon, phpIcon } from '@/Helpers/icon';
 import Link from 'next/link';
-
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/phpbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -157,24 +156,22 @@ const Wrap = styled.div`
     }
 `
 
-const larveldev = () => {
+const phpdev = () => {
     const datanew = [
-        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
-        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
-        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
-        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
+        { id: 1, title: "Open Source", desc: "The biggest benefit of using PHP for web development is that it is open-source, which means any web developer can program on it, and that is for free.", },
+        { id: 2, title: "Superior Performance", desc: "PHP is an effective option for programming, and it supports almost all web servers. This way, it delivers high-quality performance.", },
+        { id: 3, title: "Highly Flexible", desc: "This is also one of the biggest advantages of using PHP. It is flexible and versatile, meaning the code which is written on PHP is compatible with all of the primary servers.", },
+        { id: 4, title: "Time Efficient", desc: "Code reusability is possible on PHP, which saves a ton of time and effort in the development procedure.", }
     ];
       
     const techData = [
-        {id:1,name:"Larvel",icon:lavrvelIcon},
-        {id:2,name:"HTML",icon:htmlIcon},
-        {id:3,name:"CSS",icon:cssIcon},
-        {id:4,name:"Java Script",icon:jsIcon},
-        {id:5,name:"MySql",icon:mysqlIcon},
+        {id:1,name:"PHP",icon:phpIcon},
+        {id:2,name:"Codeigniter",icon:codeigniterIcon},
+        {id:3,name:"Laravel",icon:lavrvelIcon},
     ]
 
     const breadcrumbs = [
-        { name: "Larvel Development", path: "/services/larvel-dev"},
+        { name: "PHP Development", path: "/services/php-dev"},
     ];
     return (
         <Layout>
@@ -187,22 +184,22 @@ const larveldev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
+                                    <h4>Our extensive PHP Development services are the prime forces behind our unmatched success</h4>
                                     <p>
-                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
+                                    For the newbies among us, PHP is a web development language that has been widely adopted for multiple websites throughout the world. It also has its uses in general programming functions. Literally millions of websites are now running on the PHP language which means that your e-commerce business may need to be founded on the PHP language as well to facilitate smooth operations with other PHP based websites. If you are looking for a developer to make a PHP based web solution for you, Weapplinse Technology could be the right company for the job.
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
+                                        <img className="wrapimagework" src="/images/php_img.jpg" alt="PHP development"/>
                                     </div>
-                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
+                                    <h4>One of the Trusted PHP Development Company</h4>
                                     <p>
-                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
+                                        One benefit of switching to PHP is that it is free software based on the PHP License. Most web servers can accommodate a site built on PHP so that eases one problem from your list of worries. Most operating systems or platforms will also accept the PHP as a standalone shell as well. So not only do you get it free of charge but you can use PHP without worrying much that it cannot be compatible with servers, operating systems or platforms. By ensuring compatibility, it means your e-commerce site can function smoothly most of the time. If you do encounter any problems that need a technical solution, turn to Weapplinse Technology to provide that assistance.
                                     </p>
                                     <p>
-                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
+                                        Because PHP is an open-source code, you can actually have the source code for your site amended if necessary. You can do this code tweaking yourself or you can hire a more experienced developer for the job. Open source means any changes can be done without having to pay the owners of the PHP source code which is the PHP Group developer. You probably will easily be able to find a web hosting provider that can support your PHP-based website.
                                     </p>
                                     <p>
-                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
+                                    Another side benefit of switching to PHP code is that it can accommodate web content management systems founded on PHP. Your e-commerce system might be using Joomla! for example, so you will be pleased to know that Joomla! is compatible with your PHP-based site. Another commonly used web content management system is Moodle which also happens to work well with a PHP-based website. Many e-commerce businesses do need some kind of web content management system so it is best to choose one that will work smoothly on your PHP coded website for the long term. Otherwise, you may need help from a developer to figure out the technical issues that are in the way.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
@@ -230,9 +227,9 @@ const larveldev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
-                                        <li><Link href="/services/php-dev">PHP Development</Link></li>
+                                        <li><Link href="/services/larvel-dev">Larvel Development</Link></li>
                                         <li><Link href="/services/node-dev">Node jS Development</Link></li>
-                                        <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
+                                        <li><Link href="/services/react-dev">React JS Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">
@@ -255,4 +252,4 @@ const larveldev = () => {
       );
 }
 
-export default larveldev
+export default phpdev

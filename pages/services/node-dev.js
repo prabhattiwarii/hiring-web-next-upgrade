@@ -1,14 +1,14 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
-import { cssIcon, jsIcon, lavrvelIcon, mysqlIcon, htmlIcon } from '@/Helpers/icon';
+import { nodeIcon} from '@/Helpers/icon';
 import Link from 'next/link';
 
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/node.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -157,24 +157,20 @@ const Wrap = styled.div`
     }
 `
 
-const larveldev = () => {
+const phpdev = () => {
     const datanew = [
-        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
-        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
-        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
-        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
+        { id: 1, title: "Custom Node.js Development",},
+        { id: 2, title: "Node.js API Development",},
+        { id: 3, title: "Node.Js Plugin",},
+        { id: 4, title: "Ongoing Statistics", }
     ];
       
     const techData = [
-        {id:1,name:"Larvel",icon:lavrvelIcon},
-        {id:2,name:"HTML",icon:htmlIcon},
-        {id:3,name:"CSS",icon:cssIcon},
-        {id:4,name:"Java Script",icon:jsIcon},
-        {id:5,name:"MySql",icon:mysqlIcon},
+        {id:3,name:"Node JS",icon:nodeIcon},
     ]
 
     const breadcrumbs = [
-        { name: "Larvel Development", path: "/services/larvel-dev"},
+        { name: "Node JS Development", path: "/services/node-dev"},
     ];
     return (
         <Layout>
@@ -187,29 +183,29 @@ const larveldev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
+                                    <h4>Build Custom Web Applications With Node JS Development Company</h4>
                                     <p>
-                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
+                                        If you require mobile and web app development services, then it’s high time to hire NodeJS developers as they are really valuable for the forthcoming future of applications. Also, it allows the NodeJS developers to create networking tools & web servers using JavaScript and a bunch of modules that handle numerous core functionalities. We have a dedicated team of skillful and trained NodeJS developers who are competent enough to develop apps that meet the diverse needs of your business. We are always ready to provide our end-to-end NodeJS development solutions. Our world-class NodeJS application development services are renowned across the globe. We also have a team of full-stack developers who have extensive knowledge & experience to work on multiple app development frameworks. We have adequate resources at our disposal to create cost-effective and swift NodeJS web development.
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
+                                        <img className="wrapimagework" src="/images/nodejs_img.jpg" alt="Node development"/>
                                     </div>
-                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
+                                    <h4>Our Customized Node.JS Web Development Services Are Highly Recommendable To Get The Best Results As Per Client’s Business Needs</h4>
                                     <p>
-                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
+                                    Our entire focus is to meet the requisite needs of our clients. We assure you of delivering the best applications using Node.JS technology. Our NodeJS developers keep updated with the latest happenings in the field of this technology so that you receive the best web application using Node.JS technology. We believe in providing our total commitment, honesty, and integrity while transforming your raw idea into an improvised product deliverable.                                    </p>
+                                    <p>
+                                    Weapplinse Technology is one of the leading NodeJS development companies that provide a one-stop solution for developing rich, high performance, and scalable web and mobile applications. No matter what your needs are – from social networking & collaboration applications to eCommerce solutions & advanced Node.JS programming we can develop them all. We employ advanced skill sets and knowledge to develop apps that can become the heartthrob of the nation!                                    </p>
+                                    <p>
+                                    If you require mobile and web app development services, then it’s high time to hire NodeJS developers as they are really valuable for the forthcoming future of applications. Also, it allows the NodeJS developers to create networking tools & web servers using JavaScript and a bunch of modules that handle numerous core functionalities. We have a dedicated team of skillful and trained NodeJS developers who are competent enough to develop apps that meet the diverse needs of your business. We are always ready to provide our end-to-end NodeJS development solutions. Our world-class NodeJS application development services are renowned across the globe. We also have a team of full-stack developers who have extensive knowledge & experience to work on multiple app development frameworks. We have adequate resources at our disposal to create cost-effective and swift NodeJS web development.
                                     </p>
                                     <p>
-                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
-                                    </p>
-                                    <p>
-                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
+                                    Our entire focus is to meet the requisite needs of our clients. We assure you of delivering the best applications using Node.JS technology. Our NodeJS developers keep updated with the latest happenings in the field of this technology so that you receive the best web application using Node.JS technology. We believe in providing our total commitment, honesty, and integrity while transforming your raw idea into an improvised product deliverable.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
                                             <div className="service" key={item.id}>
                                                 <div className="inner">
                                                     <h5>{item.title}</h5>
-                                                    <div className="text">{item.desc}</div>
                                                 </div>
                                             </div>
                                         ))}
@@ -230,8 +226,8 @@ const larveldev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
+                                        <li><Link href="/services/larvel-dev">Larvel Development</Link></li>
                                         <li><Link href="/services/php-dev">PHP Development</Link></li>
-                                        <li><Link href="/services/node-dev">Node jS Development</Link></li>
                                         <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
                                     </ul>
                                 </div>
@@ -255,4 +251,4 @@ const larveldev = () => {
       );
 }
 
-export default larveldev
+export default phpdev

@@ -31,14 +31,14 @@ function Header() {
                 <Link href="/" className={`${style.home} ${router.pathname === "/" ? style.active : ""}`}>Home</Link>
                 <Link href="/company" className={`${style.Company} ${router.pathname === "/company" ? style.active : ""}`}>Company</Link>
                 <div className={`${style.Services} ${style.subParent}`} >
-                    <Link href="/services/android-dev" className={`${style.ServicesNew} ${router.pathname === "/services/android-dev" ? style.active : ""}`} >Services</Link>
+                    <Link href="#" className={`${style.ServicesNew} ${router.pathname === "#" ? style.active : ""}`} >Services</Link>
                     {(
                         <div className={style.ServicesMain}>
-                            <Link href="/services/android-dev" className={style.Services1}>Mobile App Development</Link>
-                            <Link href="/services/larvel-dev" className={style.Services1}>Web Development</Link>
-                            <Link href="/services/ui" className={style.Services1}>Ui/Ux Design</Link>
-                            <Link href="/services/application-dev" className={style.Services1}>Application Maintence & Support</Link>
-                            <Link href="/services/hire-dev" className={style.Services1}>Hire Dedicated Developers</Link>
+                            <Link href="/services/android-dev" className={`${style.Services1} ${router.pathname === "/services/android-dev" ? style.active : ""}`}>Mobile App Development</Link>
+                            <Link href="/services/larvel-dev" className={`${style.Services1} ${router.pathname === "/services/larvel-dev" ? style.active : ""}`}>Web Development</Link>
+                            <Link href="/services/ui" className={`${style.Services1} ${router.pathname === "/services/ui" ? style.active : ""}`}>Ui/Ux Design</Link>
+                            <Link href="/services/application-dev" className={`${style.Services1} ${router.pathname === "/services/application-dev" ? style.active : ""}`}>Application Maintence & Support</Link>
+                            <Link href="/services/hire-dev" className={`${style.Services1} ${router.pathname === "/services/hire-dev" ? style.active : ""}`}>Hire Dedicated Developers</Link>
                         </div>
                     )}
                 </div>

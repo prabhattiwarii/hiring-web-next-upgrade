@@ -108,13 +108,11 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    transition: all 0.1s ease 0s;
 }
 
 .ServicesNew{
   font-size: 18px;
   cursor: pointer;
-  transition: all 0.2s ease 0s;
 }
 
 .ServicesMain{
@@ -128,9 +126,8 @@
   width: max-content;
   top: 50px;
   display: none;
-  transition: all 0.4s;
   background-color: #fff;
-  transition: all 0.1s ease 0s;
+  transition: all 0.4s;
 }
 .Services:hover .ServicesMain{
   display:flex;

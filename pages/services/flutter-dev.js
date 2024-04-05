@@ -1,14 +1,13 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
-import { cssIcon, jsIcon, lavrvelIcon, mysqlIcon, htmlIcon } from '@/Helpers/icon';
 import Link from 'next/link';
-
+import { dratIcon, fluttersdkIcon} from '@/Helpers/icon';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/iosbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -157,24 +156,20 @@ const Wrap = styled.div`
     }
 `
 
-const larveldev = () => {
+const flutterdev = () => {
     const datanew = [
-        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
-        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
-        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
-        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
+        { id: 1, title: "Single Coding Based", desc: "Probably the best part with Flutter application development services is that the application developers no longer need to deliver multiple codes for particular platforms.", },
+        { id: 2, title: "Make your Own Widget", desc: "Flutter is intended to let you adjust its current devices and make another one. Its device library accompanies a scope of alternatives and can be modified easily.", },
+        { id: 3, title: "Simple to Adopt", desc: "Google has planned Flutter to guarantee conveying some simplicity to developers and make the development procedure quicker and simpler. The SDK can be easily gotten a handle on by amateur developers too.", },
+        { id: 4, title: "Cupertino & Design", desc: "Flutter SDK gives an expressive User Interface, outwardly appealing cross-platform native like applications with device library work of material plan for android application and cupertino for iOS application.", }
     ];
-      
     const techData = [
-        {id:1,name:"Larvel",icon:lavrvelIcon},
-        {id:2,name:"HTML",icon:htmlIcon},
-        {id:3,name:"CSS",icon:cssIcon},
-        {id:4,name:"Java Script",icon:jsIcon},
-        {id:5,name:"MySql",icon:mysqlIcon},
+        {id:1,name:"Flutter SDK",icon:fluttersdkIcon},
+        {id:2,name:"Dart",icon:dratIcon},
     ]
-
+      
     const breadcrumbs = [
-        { name: "Larvel Development", path: "/services/larvel-dev"},
+        { name: "Flutter Development", path: "/services/flutter-dev"},
     ];
     return (
         <Layout>
@@ -187,22 +182,28 @@ const larveldev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
+                                    <h4>Flutter App Development Company - An Expressive, Flexible and Revolutionary Framework to Develop The Next-Gen Apps</h4>
                                     <p>
-                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
+                                        Flutter is an open-source technology powered by Google to create native Android and iOS apps with a single codebase. It is a comprehensive and full-fledged software development kit that contains a rendering engine, readymade widgets, testing, and integration APIs, command-line tools, and everything a developer needs to develop a cross-platform application. Flutter offers crucial advantages to businesses as its development process is quick and the cost of production is low. Besides this, the flutter apps are visually appealing and UI is smoothly animated which ensures user engagement. Moreover, it combines all the features of the native performance like navigation, scrolling, icons, and fonts to allow the businesses to work with an existing part of the application and there is no requirement to have a full application in the Flutter.
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
+                                        <img className="wrapimagework" src="/images/flutter_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
                                     </div>
-                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
+                                    <h4>We deliver best-in-class highly secure, sustainable scalable custom flutter development service.</h4>
                                     <p>
-                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
+                                        Flutter Apps are cost-effective where a single code base is used to develop applications for both iOS and Android; thereby eliminates the need for having separate iOS and Android developers.
                                     </p>
                                     <p>
-                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
+                                        With Flutter mobile app, deployment of new features, and maintenance is now much easier and comfortable, as a single code base is required to deploy the application.
                                     </p>
                                     <p>
-                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
+                                        The advanced UX/UI helps businesses to engage their customers and retain them in the long term. Also, the app looks the same on older versions, so there are no additional costs for supporting the older devices.
+                                    </p>
+                                    <p>
+                                        The architecture of Flutter apps allows it to work faster and smoother without hanging and cutting when one scrolls them.
+                                    </p>
+                                    <p>
+                                        Its cross-platform functionality caters to Android and iOS users thereby enhance the reach of your business.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
@@ -230,9 +231,9 @@ const larveldev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
-                                        <li><Link href="/services/php-dev">PHP Development</Link></li>
-                                        <li><Link href="/services/node-dev">Node jS Development</Link></li>
-                                        <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
+                                        <li><Link href="/services/ios-dev">iOS Development</Link></li>
+                                        <li><Link href="/services/android-dev">Android Development</Link></li>
+                                        <li><Link href="/services/react-native-dev">React Native Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">
@@ -255,4 +256,4 @@ const larveldev = () => {
       );
 }
 
-export default larveldev
+export default flutterdev

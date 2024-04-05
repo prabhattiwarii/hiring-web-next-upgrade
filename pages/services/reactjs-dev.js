@@ -1,14 +1,14 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
-import { cssIcon, jsIcon, lavrvelIcon, mysqlIcon, htmlIcon } from '@/Helpers/icon';
 import Link from 'next/link';
+import { reactIcon } from '@/Helpers/icon';
 
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/reactjsbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -157,24 +157,20 @@ const Wrap = styled.div`
     }
 `
 
-const larveldev = () => {
+const reactjsdev = () => {
     const datanew = [
-        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
-        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
-        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
-        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
+        { id: 1, title: "Open Source JavaScript library",},
+        { id: 2, title: "Component Reusability",},
+        { id: 3, title: "Flux & Redux Architecture",},
+        { id: 4, title: "Get An Easily Scalable Software",}
     ];
       
     const techData = [
-        {id:1,name:"Larvel",icon:lavrvelIcon},
-        {id:2,name:"HTML",icon:htmlIcon},
-        {id:3,name:"CSS",icon:cssIcon},
-        {id:4,name:"Java Script",icon:jsIcon},
-        {id:5,name:"MySql",icon:mysqlIcon},
+        {id:3,name:"React JS",icon:reactIcon},
     ]
 
     const breadcrumbs = [
-        { name: "Larvel Development", path: "/services/larvel-dev"},
+        { name: "React JS Development", path: "/services/reactjs-dev"},
     ];
     return (
         <Layout>
@@ -187,29 +183,34 @@ const larveldev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
+                                    <h4>Utilize Our React Js Service For Building Fast And Interactive User Interfaces</h4>
                                     <p>
-                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
+                                    React is not only a framework; it is also a library having strong support from Facebook. It is the framework for creating model web apps. Applications developed with React are highly responsive and offer easy handling of UI. It is an open-source framework and a perfect suit for developing fast, scalable and large web applications. At Weapplinse, we use highly efficient and unique features of component reusability and bring the most desired results by disbanding the interface components into smaller segments. This way of segmentation needs less effort and offers the best outcomes.                                    
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
+                                        <img className="wrapimagework" src="/images/reactjs_img.jpg" alt="React development"/>
                                     </div>
-                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
+                                    <h4>Building Highly Engaging React Applications To Upscale Your Business</h4>
                                     <p>
-                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
+                                    ReactJS is one of the most widely used JavaScript libraries popular from component based approach, reusability of code, high level of flexibility and superior performance. ReactJS framework is widely known for faster development, lower learning curve, sophisticated developer-friendly attributes and great performance.                                  
                                     </p>
                                     <p>
-                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
+                                    With React JS web development, we deliver highly scalable and robust web applications. Our expert React JS developers provide custom ReactJS development services with which they synchronize data and manage app updates without any need for page reloading. We also assist our clients in migrating their existing applications to React JS. Hire React JS developers to meet your unique business needs.      
                                     </p>
                                     <p>
-                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
+                                    React JS this days turns into a well known and ground-breaking JavaScript Framework because of its unmatched brilliant highlights and adaptabilities. This open source, cross-stage structure empowers ReactJS designers to make hello there end answers for web and versatile application advancement. We are skilled at offering React JS customization services for web and app to clients who want the best solutions as per their business needs. Our developers are experienced and skilled to handle different React Customization Projects.
+                                    </p>
+                                    <p>
+                                    Weapplinse is a leading ReactJS development company having years of frontline experience and proven expertise in delivering highly interactive UI for a variety of enterprise applications across the niches. No wonder, a whole array of business giants from different parts of the globe prefer to hire ReactJS developers from us.
+                                    </p>
+                                    <p>
+                                    At Weapplinse , we use this innovative and flexible open source development framework to the advantage of enterprise app requirements and create winning solutions. We provide ReactJS services that stand apart in terms of both UI and user experience.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
                                             <div className="service" key={item.id}>
                                                 <div className="inner">
                                                     <h5>{item.title}</h5>
-                                                    <div className="text">{item.desc}</div>
                                                 </div>
                                             </div>
                                         ))}
@@ -230,9 +231,9 @@ const larveldev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
+                                        <li><Link href="/services/larvel-dev">Larvel Development</Link></li>
                                         <li><Link href="/services/php-dev">PHP Development</Link></li>
-                                        <li><Link href="/services/node-dev">Node jS Development</Link></li>
-                                        <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
+                                        <li><Link href="/services/node-dev">Node JS Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">
@@ -255,4 +256,4 @@ const larveldev = () => {
       );
 }
 
-export default larveldev
+export default reactjsdev

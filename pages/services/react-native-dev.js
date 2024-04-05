@@ -1,14 +1,13 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
-import { cssIcon, jsIcon, lavrvelIcon, mysqlIcon, htmlIcon } from '@/Helpers/icon';
 import Link from 'next/link';
-
+import { jsIcon, reactIcon, reduxIcon } from '@/Helpers/icon';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/reactnbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -157,24 +156,21 @@ const Wrap = styled.div`
     }
 `
 
-const larveldev = () => {
+const reactativedev = () => {
     const datanew = [
-        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
-        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
-        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
-        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
+        { id: 1, title: "React Native Consulting Services", desc: "On the off chance that you need to know anything about React Native innovation, don't hesitate to get in touch with us and specialists are prepared to support you.", },
+        { id: 2, title: "Relocation and Upgradation Services", desc: "On the off chance that you need to move your CMS from another platform to React Native or overhaul the current adaptation of React Native, we are prepared to support you.", },
+        { id: 3, title: "Custom React Native Development", desc: "Our long stretches of space ability encourages us in giving secure, versatile, stuffed and portable inviting React Native CMS solutions.", },
+        { id: 4, title: "Backing and Maintenance", desc: "Notwithstanding the React Native development administrations, we are additionally capable in giving nonstop React Native support and upkeep to our regarded customers.", }
     ];
-      
     const techData = [
-        {id:1,name:"Larvel",icon:lavrvelIcon},
-        {id:2,name:"HTML",icon:htmlIcon},
-        {id:3,name:"CSS",icon:cssIcon},
-        {id:4,name:"Java Script",icon:jsIcon},
-        {id:5,name:"MySql",icon:mysqlIcon},
+        {id:1,name:"JavaScript",icon:jsIcon},
+        {id:2,name:"React",icon:reactIcon},
+        {id:3,name:"Redux",icon:reduxIcon},
     ]
-
+      
     const breadcrumbs = [
-        { name: "Larvel Development", path: "/services/larvel-dev"},
+        { name: "React Native Development", path: "/services/react-native-dev"},
     ];
     return (
         <Layout>
@@ -187,22 +183,25 @@ const larveldev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
+                                    <h4>If You Have A Dream Of A Successful App, Then Look No Further Than React Native</h4>
                                     <p>
-                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
+                                        React Native is a framework that was introduced by Facebook to reinforce and enhance their mobile app's development. It has gained a new height of popularity not only among the start-up companies but also the big players in the industry are using and vouching for it. Some of the most popular apps that are presently making use of the React Native are Instagram, Bloomberg, Skype, Facebook Messenger, SoundCloud Pulse, Uber, and Salesforce, to name a few.
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
+                                        <img className="wrapimagework" src="/images/reactn_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
                                     </div>
-                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
+                                    <h4>React Native Apps - The Best Cross Platform App Development</h4>
                                     <p>
-                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
+                                        We align innovative technology with your business objectives to help you embrace new opportunities. We build apps that are based on latest trends, giving you the game-changer advantages.
                                     </p>
                                     <p>
-                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
+                                        React Native makes mobile apps development workflow more resilient, be it live reloading or hot reloading, which in turn, empowers the developer to perform the most sought after modifications to the source code of the app without necessitating recomposing of it. It is lightning-fast and considerably expedites the overall software development process. Apps can be integrated more rapidly on both Android and iOS without compromising in performance or UX.
                                     </p>
                                     <p>
-                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
+                                        Building mobile app through React Native application development can save you few hundred dollars. The application is flawless and bug-prone. Although the code is hard to learn, you don’t need to stress on the code and let us do the job for you. You can expect the app in quick time as it prevents the bugs.
+                                    </p>
+                                    <p>
+                                        Our React Native app developer can do high-performance, functional applications quickly and easily for you. If our skilled developers are developing your app, then a big difference will be seen in terms of graphics rendering and the speed of the app. Whether you hire React Native Programmers or React Native Developers in India, we keep it in PRAXINFO. With the help of our accomplished fast developers, you can apply new features to your app or expand existing ones. Stay in touch with our team to learn more about our affordable price plans for React Native app development.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
@@ -230,9 +229,9 @@ const larveldev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
-                                        <li><Link href="/services/php-dev">PHP Development</Link></li>
-                                        <li><Link href="/services/node-dev">Node jS Development</Link></li>
-                                        <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
+                                        <li><Link href="/services/ios-dev">iOS Development</Link></li>
+                                        <li><Link href="/services/android-dev">Android Development</Link></li>
+                                        <li><Link href="/services/flutter-dev">Flutter Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">
@@ -255,4 +254,4 @@ const larveldev = () => {
       );
 }
 
-export default larveldev
+export default reactativedev

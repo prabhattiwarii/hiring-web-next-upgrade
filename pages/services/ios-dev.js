@@ -1,14 +1,13 @@
+import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
-import React from 'react'
 import styled from 'styled-components';
-import { cssIcon, jsIcon, lavrvelIcon, mysqlIcon, htmlIcon } from '@/Helpers/icon';
 import Link from 'next/link';
-
+import { cobjective, swiftIcon, xcodeIcon } from '@/Helpers/icon';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/laravelbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/iosbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -157,24 +156,21 @@ const Wrap = styled.div`
     }
 `
 
-const larveldev = () => {
+const iosdev = () => {
     const datanew = [
-        { id: 1, title: "Mail-service integration", desc: "Laravel website development services provider with several plugins and mail service integration is one of them. This means one can get direct enquiries from the website. Businesses can also quote for services right away which will help them grow their business.", },
-        { id: 2, title: "Technical Vulnerability", desc: "We are leading Laravel web Development Company committed to take care of online security of your web app with utmost accuracy. Laravel is the best technology to use when safety comes into the picture.", },
-        { id: 3, title: "Technical Support", desc: "Laravel web application services come with robust technical support. Developers have the best help by their side to solve problems faced during a project.", },
-        { id: 4, title: "Configuration errors", desc: "Configuration errors can make it very difficult to navigate smoothly through your site. Our expert Laravel developers are able to easily configure the errors and are able to solve it.", }
+        { id: 1, title: "Custom iOS App Development", desc: "We are proficient at building custom iOS applications that address customers' issues and pressed with present day highlights. You can share your application thoughts and we will transform it into a protected, mobile, and strong iOS application.", },
+        { id: 2, title: "iOS App Upgrade", desc: "With full scale information on the iOS biological system, we can give a problem free iOS App Upgrade service. We overhaul your application to the most recent iOS stage and ensure that the application is perfect with the freshest Apple gadgets.", },
+        { id: 3, title: "iOS App Testing/Portability", desc: "Our accomplished iOS developers can port your iOS application to various Apple gadgets. Utilizing the best versatility approach, they guarantee the smooth and brisk convenience of your application.", },
+        { id: 4, title: "Irresistible Features", desc: "No matter is it 3D Touch or iBeacon, we present irresistible features of iOS for getting affordable and the best iPhone Apps development solutions.", }
     ];
-      
     const techData = [
-        {id:1,name:"Larvel",icon:lavrvelIcon},
-        {id:2,name:"HTML",icon:htmlIcon},
-        {id:3,name:"CSS",icon:cssIcon},
-        {id:4,name:"Java Script",icon:jsIcon},
-        {id:5,name:"MySql",icon:mysqlIcon},
+        {id:1,name:"Objective-C",icon:cobjective},
+        {id:2,name:"Swift",icon:swiftIcon},
+        {id:3,name:"Xcode",icon:xcodeIcon},
     ]
-
+      
     const breadcrumbs = [
-        { name: "Larvel Development", path: "/services/larvel-dev"},
+        { name: "ios Development", path: "/services/ios-dev"},
     ];
     return (
         <Layout>
@@ -187,23 +183,21 @@ const larveldev = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>Delivering Robust, High Performing, Customized And Client Centric Laravel Development Solutions To Boost Your Business Services And Overall Profit</h4>
+                                    <h4>Develop A Unique iOS Application Of Your Vision</h4>
                                     <p>
-                                        Laravel is an open-source PHP framework, Used for the web applications development following the MVC architectural platform. One of PHP’s most amazing frameworks, Laravel is developed with a key focus of writing code syntax which is simple and less expensive. Laravel is considered to be the most used after PHP framework today.
-                                    </p>
+                                        Cj has made its mark as the best iPhone application development company to cater incredible iOS application development services.</p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/lara.jpg" alt="Larvel development"/>
+                                        <img className="wrapimagework" src="/images/ios_img.jpg" alt="Develop A Unique iOS Application Of Your Vision "/>
                                     </div>
-                                    <h4>We Are Committed To Giving Timely Delivery And Reliable Laravel App Development Services</h4>
+                                    <h4>Empowering Your Business With iOS App Development At Cj Technology</h4>
                                     <p>
-                                        Being extremely powerful and reliable, it is loaded with amazing features and attributes that increase the level of output, efficiency, and competitiveness. Designing, development, and customization become fast and easy with the Laravel. It gives the development of high-quality websites and web applications.
-                                    </p>
+                                        The iPhone has gained a huge limelight since its rumors & official launch for redefining the complete mobile technology. Weapplinse has made its mark as the best iPhone application development company to cater incredible iOS application development services. The feature-rich iPhone apps can make this smart piece more extraordinary in performance and usage. With our enviable experience in custom iPhone apps development services, we are ready to accept any feasible challenge to prove our development skills. We firmly get involved within your (client) iPhone app development project right from the initial phase till we come out of fully featured app development meeting exactly to your specifications.                                    </p>
                                     <p>
-                                        At the weapplinse Technology, we have a skilled team of best Laravel developers working on developing small to medium to large-scale projects. We provide a wide range of services like Laravel website development, Laravel mobile-based applications, etc. We provide you the flexibility to hire skilled and experienced Laravel developers to work on projects that meet clients' requirements and deeds and improve their overall conversion rate and growth.
-                                    </p>
+                                    Our iPhone app developers and program managers are highly proficient to get mixed with the client ideas to shape it into the live applications, which result in to the sheer success.</p>
                                     <p>
-                                        We can help you to build simple apps to complex CMS for eCommerce websites at fast turnaround time without using a lot of money. Our team of Laravel developers are always ready to build the solutions based on latest coding standards and guidelines for creating any type and size of applications or websites. Our Laravel developer did all the skills of the framework to give a robust, real-time solution for the web application to all industry. We use all the positive aspects of Laravel to create class-apart eCommerce and enterprise apps by implementing agile business methodologies.
+                                    It’s not just about knowledge required for successful iPhone application development services, but our technical team evaluates each prospect of apps from market and business vision.
                                     </p>
+                                    <p>Every day we promise ourselves to put a super-bright service satisfaction smile on our clients. Hey! Why don’t you give us a knock today?</p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
                                             <div className="service" key={item.id}>
@@ -230,9 +224,9 @@ const larveldev = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
-                                        <li><Link href="/services/php-dev">PHP Development</Link></li>
-                                        <li><Link href="/services/node-dev">Node jS Development</Link></li>
-                                        <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
+                                        <li><Link href="/services/android-dev">Android Development</Link></li>
+                                        <li><Link href="/services/react-native-dev">React Native Development</Link></li>
+                                        <li><Link href="/services/flutter-dev">Flutter Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">
@@ -255,4 +249,4 @@ const larveldev = () => {
       );
 }
 
-export default larveldev
+export default iosdev
