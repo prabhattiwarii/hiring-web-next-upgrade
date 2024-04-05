@@ -339,8 +339,8 @@ const hiredev = () => {
         { id: 5, title: "Hire Flutter App Developers", image: "/images/job1.jpg", description: "We have the best flutter team to help you experience the best app development." },
         { id: 6, title: "Hire Kotlin App Developers", image: "/images/1.png", description: "Our Kotlin developers are eligible in improving operational efficiencies and cost structures of businesses through most powerful mobile applications for Android native solution." },
         { id: 7, title: "Hire Laravel Developers", image: "/images/1.png", description: "Hire our experienced Laravel developers to create high-end web applications as per your requirement." },
-        { id: 8, title: "Hire Node JS Developers", image: "/images/1.png", description: "Are you looking for hire top Node.js developers at affordable prices? At Weapplinse you can get dedicated Node.js developers." },
-        { id: 9, title: "Hire React JS Developers", image: "/images/job2.jpg", description: "Coordinate talented and prepared ReactJS App Developers of Weapplinse Technology to use untouchable ReactJS improvement that benefits independent of your business size and area." },
+        { id: 8, title: "Hire Node JS Developers", image: "/images/1.png", description: "Are you looking for hire top Node.js developers at affordable prices? At Cj you can get dedicated Node.js developers." },
+        { id: 9, title: "Hire React JS Developers", image: "/images/job2.jpg", description: "Coordinate talented and prepared ReactJS App Developers of Cj Technology to use untouchable ReactJS improvement that benefits independent of your business size and area." },
         { id: 10, title: "Hire UI/UX Designer", image: "/images/1.png", description: "Hire Our proficient UI/UX Designer to Surge up your business to a Different Level With Exceptional Designs." },
     ];
     const tech=[
@@ -394,7 +394,7 @@ const hiredev = () => {
                                 <h2>Hire Dedicated Resources To Reach<span> New Business Heights</span></h2>
                             </div>
                             <h5 className="sub-head">Looking to perfect the balance between cost, time &amp; quality? </h5>
-                            <p className='text'>Hire dedicated developers from Weapplinse will be the best option to develop your business website or applications. Being a leading enterprise, Weapplinse offers you tailored solutions. Hiring dedicated developers to manage the entire development cycle of your project. When you choose us, you get trust of a brand, Surat's top Dedicated Development team, 7+ years of experience, strict NDA terms & complete peace of mind.</p>
+                            <p className='text'>Hire dedicated developers from Cj will be the best option to develop your business website or applications. Being a leading enterprise, Cj offers you tailored solutions. Hiring dedicated developers to manage the entire development cycle of your project. When you choose us, you get trust of a brand, Surat's top Dedicated Development team, 7+ years of experience, strict NDA terms & complete peace of mind.</p>
                         </div>
                         <div className="image-wrap">
                             <img src="/images/hdd_img1.png" alt="" />

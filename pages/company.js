@@ -267,7 +267,7 @@ const company = () => {
     const timelineData = [
         { id: 1, year:"Year 2014", title:"Two People Company",desc:"Young and enterprising professionals who have been part of the mobile application started the company in a room with no more than a couple of projects."},
         { id: 2, year:"Year 2016", title:"New Team",desc:"Rented a new office and hired 10 people who have different talents, education qualifications, and backgrounds."},
-        { id: 3, year:"Year 2018", title:"Exploring New Horizons",desc:"Year by year the company was showing signs of being a superstar in the Mobile App Industry. Weapplinse Technology was gaining the full trust of the clients. Company started work on many new projects, technologies which helped them to explore new horizons"},
+        { id: 3, year:"Year 2018", title:"Exploring New Horizons",desc:"Year by year the company was showing signs of being a superstar in the Mobile App Industry. Cj Technology was gaining the full trust of the clients. Company started work on many new projects, technologies which helped them to explore new horizons"},
         { id: 4, year:"Year 2020", title:"Pandemic And WFH",desc:"Remote working made our team stronger and more productive. We have successfully completed all our projects that were undertaken before the pandemic."},
         { id: 5, year:"Year 2022", title:"Celebrated 8th Anniversary with New Office and New Milestones",desc:"We celebrated our 8th anniversary of successfully completing 1000+ Web, IOT, software, and mobile app projects."},
     ]

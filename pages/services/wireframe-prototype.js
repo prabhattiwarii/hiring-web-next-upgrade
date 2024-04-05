@@ -177,7 +177,7 @@ const wireframeprototype = () => {
                                 <div className="inner-box">
                                     <h4>We Start With A Conceptualization And Blueprint. We Optimize The Page’s Layout Format And Explain Framing Lineups Of The Overall Design</h4>
                                     <p>
-                                    Weapplinse, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
+                                    Cj, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
                                     </p>
                                     <div className="img-wrap">
                                         <img className="wrapimagework" src="/images/wp_img.jpg" alt="wireframe-prototype"/>
@@ -187,7 +187,7 @@ const wireframeprototype = () => {
                                     How it looks is important, how it works is important as well but both pales in comparison to the feeling a user gets when they use it.
                                     </p>
                                     <p>
-                                    This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Weapplinse, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
+                                    This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Cj, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
                                     </p>
                                     <p>
                                     We use human behavioral studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realized long back that in today’s world, you cannot define the behavior of users, it’s us who would have to learn the user preferences and adapt ourselves. We try to merge functionality with pleasurable user experience and build marketing processes around it, rather than the other way around. Our most interesting designing domains are iPhone apps design, Android apps design, website design, Mobile game design, Banner design.

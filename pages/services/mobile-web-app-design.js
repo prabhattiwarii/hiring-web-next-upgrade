@@ -185,7 +185,7 @@ const mobileappdesign = () => {
                                     <div className="img-wrap">
                                         <img className="wrapimagework" src="/images/mw_img.jpg" alt="mobile web app design"/>
                                     </div>
-                                    <h4>Weapplinse believes the key to success in developing Graphic Design is in our ability to understand the Client’s vision, and we convey that vision using powerful Graphic Delivery.</h4>
+                                    <h4>Cj believes the key to success in developing Graphic Design is in our ability to understand the Client’s vision, and we convey that vision using powerful Graphic Delivery.</h4>
                                     <p>
                                     We are specialists in web design, be it big or small websites. Our designs are a creative outlet and we make sure our gorgeous web designs and newsletter design are totally inline with clients’ business objectives. An instantly responsive website, logo branding for product identity, naming, colors, custom icon sets, style guide or be it typography. We are focused on helping a host of small businesses succeed online through our coolest software application user interface. We have treated each of our clients as a family. Is it a small business or huge international corporations?
                                     </p>
@@ -196,7 +196,7 @@ const mobileappdesign = () => {
                                     Since your website design is the reflection of your company, details are important to us, so that we can present an excellent insight about your business and navigate the content. Web design is our passion. We love innovation and coming up with new strategies to push our client’s website forward and make them stand out from the pack.
                                     </p>
                                     <p>
-                                    Weapplinse Technology crafts beautiful and stunning mobile app designs that attract customers’ attention quickly. We aim to provide utmost satisfaction at clients' end with our awesome work.
+                                    Cj Technology crafts beautiful and stunning mobile app designs that attract customers’ attention quickly. We aim to provide utmost satisfaction at clients' end with our awesome work.
                                     </p>
                                     <p>
                                     Our creative designing team is filled with knowledge and experience to provide the best mobile app designs that make a lasting impression on clients.

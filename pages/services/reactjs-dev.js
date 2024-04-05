@@ -185,7 +185,7 @@ const reactjsdev = () => {
                                 <div className="inner-box">
                                     <h4>Utilize Our React Js Service For Building Fast And Interactive User Interfaces</h4>
                                     <p>
-                                    React is not only a framework; it is also a library having strong support from Facebook. It is the framework for creating model web apps. Applications developed with React are highly responsive and offer easy handling of UI. It is an open-source framework and a perfect suit for developing fast, scalable and large web applications. At Weapplinse, we use highly efficient and unique features of component reusability and bring the most desired results by disbanding the interface components into smaller segments. This way of segmentation needs less effort and offers the best outcomes.                                    
+                                    React is not only a framework; it is also a library having strong support from Facebook. It is the framework for creating model web apps. Applications developed with React are highly responsive and offer easy handling of UI. It is an open-source framework and a perfect suit for developing fast, scalable and large web applications. At Cj, we use highly efficient and unique features of component reusability and bring the most desired results by disbanding the interface components into smaller segments. This way of segmentation needs less effort and offers the best outcomes.                                    
                                     </p>
                                     <div className="img-wrap">
                                         <img className="wrapimagework" src="/images/reactjs_img.jpg" alt="React development"/>
@@ -201,10 +201,10 @@ const reactjsdev = () => {
                                     React JS this days turns into a well known and ground-breaking JavaScript Framework because of its unmatched brilliant highlights and adaptabilities. This open source, cross-stage structure empowers ReactJS designers to make hello there end answers for web and versatile application advancement. We are skilled at offering React JS customization services for web and app to clients who want the best solutions as per their business needs. Our developers are experienced and skilled to handle different React Customization Projects.
                                     </p>
                                     <p>
-                                    Weapplinse is a leading ReactJS development company having years of frontline experience and proven expertise in delivering highly interactive UI for a variety of enterprise applications across the niches. No wonder, a whole array of business giants from different parts of the globe prefer to hire ReactJS developers from us.
+                                    Cj is a leading ReactJS development company having years of frontline experience and proven expertise in delivering highly interactive UI for a variety of enterprise applications across the niches. No wonder, a whole array of business giants from different parts of the globe prefer to hire ReactJS developers from us.
                                     </p>
                                     <p>
-                                    At Weapplinse , we use this innovative and flexible open source development framework to the advantage of enterprise app requirements and create winning solutions. We provide ReactJS services that stand apart in terms of both UI and user experience.
+                                    At Cj , we use this innovative and flexible open source development framework to the advantage of enterprise app requirements and create winning solutions. We provide ReactJS services that stand apart in terms of both UI and user experience.
                                     </p>
                                     <div className="sevice-wrap">
                                         {datanew.map((item) => (
