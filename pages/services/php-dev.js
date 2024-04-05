@@ -229,7 +229,7 @@ const phpdev = () => {
                                     <ul className="service-list">
                                         <li><Link href="/services/larvel-dev">Larvel Development</Link></li>
                                         <li><Link href="/services/node-dev">Node jS Development</Link></li>
-                                        <li><Link href="/services/react-dev">React JS Development</Link></li>
+                                        <li><Link href="/services/reactjs-dev">React JS Development</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">
