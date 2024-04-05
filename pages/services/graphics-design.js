@@ -2,12 +2,12 @@ import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
 import styled from 'styled-components';
-import { figmaIcon, illustratorIcon, invisionStudioIcon, photoshopIcon, sketchIcon, xdIcon, zeplinIcon } from '@/Helpers/icon';
+import {illustratorIcon,photoshopIcon} from '@/Helpers/icon';
 import Link from 'next/link';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/uiuxbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/gdbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -158,16 +158,11 @@ const Wrap = styled.div`
 
 const uiux = () => {
     const breadcrumbs = [
-        { name: "UI/UX Customization", path: "/services/ui"},
+        { name: "Graphics Design", path: "/services/graphics-design"},
     ];
     const techData = [
         {id:1,name:"Photoshop",icon:photoshopIcon},
         {id:2,name:"Illustrator",icon:illustratorIcon},
-        {id:3,name:"Figma",icon:figmaIcon},
-        {id:4,name:"XD",icon:xdIcon},
-        {id:5,name:"Sketch",icon:sketchIcon},
-        {id:6,name:"Invision Studio",icon:invisionStudioIcon},
-        {id:7,name:"Zeplin",icon:zeplinIcon},
     ]
     return (
         <Layout>
@@ -180,22 +175,28 @@ const uiux = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>UI UX Design Helps The Application To Win The Customers And Provide Them Exactly What They Are Looking For</h4>
+                                    <h4>Weapplinse Has A Strong Focus In Graphic Design, With Expertise In Creating Eye-Catching Graphics, Corporate Business Presentations, Creative Designs, And Concept Brochures</h4>
                                     <p>
-                                    Building experiences across different mobile and websites. We are a leading UX/UI design Company in India serving different industry sectors with our awesome design services.
+                                    We’re experts in content management systems, front-end web development, and custom integrations. A website, marketing campaign or even a simple banner cannot be possibly created without the services of an experienced graphic designer. Graphic designing makes any simple banner, brochure, write up, web page, infographic and many more types of content look pleasing and mesmerizing as well.
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/uiux_img.jpg" alt="ui-ux development"/>
+                                        <img className="wrapimagework" src="/images/gd_img.jpg" alt="graphics design"/>
                                     </div>
-                                    <h4>The Success Of Any App Depends On The Customer's Usage And Experience. If You Provide A Great Experience To The Customer Then You Win!</h4>
+                                    <h4>Weapplinse Believes The Key To Success In Developing Graphic Design Is In Our Ability To Understand The Client’s Vision, And We Convey That Vision Using Powerful Graphic Delivery</h4>
                                     <p>
-                                    When it comes to website and application development the customer satisfaction plays a major role in the success of that particular app or website. To make it better the user interface(UI) and user experience(UX) should be extraordinary.
+                                    Get the graphics on the website designed by experts specialized in UI UX design. Make the designs that do match your business needs, ideology and make a first impression that would make the difference.
                                     </p>
                                     <p>
-                                    There are many apps on play store and the app store but very few become successful, the reason behind them being successful is they have great look and feel. Almost every user is looking for an app or website which is visually appealing, and has an extremely good feel throughout the usage. So it is quite necessary to put a considerable emphasis on UI and UX development.
+                                    Enhance the power of your branding with the right combination of colors, shapes, and words with Weapplinse Technology!!
                                     </p>
                                     <p>
-                                    No matter how powerful or innovative your application idea is, without a solid well thought user interface design it won’t achieve success easily. In today’s competitive world only a good user experience will define the future of the app. Weapplinse is a leading User Interface and User Experience Design Company. We understand the power of user experience engineering and bring our application design experience into play to provide you specially crafted UI/UX design and development services that can help your app and idea stand out.
+                                    The graphic design team at Weapplinse focuses mainly on the core business area and marketing assets. Keeping all this in mind, we ensure that your graphic designs, logos, icons, illustrations, and other creatives make a mark anywhere online.
+                                    </p>
+                                    <p>
+                                    The creative graphic design team at Wepplinse also offers outstanding and attention-grabbing visuals for social media creatives, website characters, animated graphics, eBooks, and much more. Being a pioneer in graphic design, we develop innovative solutions for clients in various verticals.
+                                    </p>
+                                    <p>
+                                    The process we follow – before we start to work on our graphic design projects, as said, we always try to collect as much information as we can from our clients. Based on the data collected, the graphic designers from Weapplinse initiate creating innovative and personalized designs that exceed the expectation levels.
                                     </p>
                                     <h4>We Hold Expertise in the Following Platforms</h4>
                                     <div className="service-box">
@@ -214,8 +215,8 @@ const uiux = () => {
                                 <div className="widget-content">
                                     <ul className="service-list">
                                         <li><Link href="/services/wireframe-prototype">Wireframe & Prototype</Link></li>
-                                        <li><Link href="/services/mobile-web-app-design">Mobile & Web App Design</Link></li>
-                                        <li><Link href="/services/graphics-design">Graphics Design</Link></li>
+                                        <li><Link href="/services/mobile-app-design">Mobile & App Design</Link></li>
+                                        <li><Link href="/services/ui">UI/UX Customization</Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar-widget">

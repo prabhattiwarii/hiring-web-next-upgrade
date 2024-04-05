@@ -2,12 +2,12 @@ import React from 'react'
 import Breadcrumb from '@/Components/BreadCrumbs';
 import Layout from '@/Components/layout/Layout';
 import styled from 'styled-components';
-import { figmaIcon, illustratorIcon, invisionStudioIcon, photoshopIcon, sketchIcon, xdIcon, zeplinIcon } from '@/Helpers/icon';
+import { figmaIcon, xdIcon} from '@/Helpers/icon';
 import Link from 'next/link';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/uiuxbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/wpbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -156,18 +156,13 @@ const Wrap = styled.div`
     }
 `
 
-const uiux = () => {
+const wireframeprototype = () => {
     const breadcrumbs = [
-        { name: "UI/UX Customization", path: "/services/ui"},
+        { name: "Wireframe & Prototype", path: "/services/wireframe-prototype"},
     ];
     const techData = [
-        {id:1,name:"Photoshop",icon:photoshopIcon},
-        {id:2,name:"Illustrator",icon:illustratorIcon},
         {id:3,name:"Figma",icon:figmaIcon},
         {id:4,name:"XD",icon:xdIcon},
-        {id:5,name:"Sketch",icon:sketchIcon},
-        {id:6,name:"Invision Studio",icon:invisionStudioIcon},
-        {id:7,name:"Zeplin",icon:zeplinIcon},
     ]
     return (
         <Layout>
@@ -180,22 +175,25 @@ const uiux = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>UI UX Design Helps The Application To Win The Customers And Provide Them Exactly What They Are Looking For</h4>
+                                    <h4>We Start With A Conceptualization And Blueprint. We Optimize The Page’s Layout Format And Explain Framing Lineups Of The Overall Design</h4>
                                     <p>
-                                    Building experiences across different mobile and websites. We are a leading UX/UI design Company in India serving different industry sectors with our awesome design services.
+                                    Weapplinse, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
                                     </p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/uiux_img.jpg" alt="ui-ux development"/>
+                                        <img className="wrapimagework" src="/images/wp_img.jpg" alt="wireframe-prototype"/>
                                     </div>
-                                    <h4>The Success Of Any App Depends On The Customer's Usage And Experience. If You Provide A Great Experience To The Customer Then You Win!</h4>
+                                    <h4>We Offer Wire Framing Service Using The Latest Digital Assets To Strategically Present Each Information Distinct & Appealing</h4>
                                     <p>
-                                    When it comes to website and application development the customer satisfaction plays a major role in the success of that particular app or website. To make it better the user interface(UI) and user experience(UX) should be extraordinary.
+                                    How it looks is important, how it works is important as well but both pales in comparison to the feeling a user gets when they use it.
                                     </p>
                                     <p>
-                                    There are many apps on play store and the app store but very few become successful, the reason behind them being successful is they have great look and feel. Almost every user is looking for an app or website which is visually appealing, and has an extremely good feel throughout the usage. So it is quite necessary to put a considerable emphasis on UI and UX development.
+                                    This is what most people miss out. Architecture is the tech spec, UI is how it looks and UX is the feeling you get. Weapplinse, with our innovation and creative conceit, ensures that technically and visually the project is perfect while providing a pleasurable user experience.
                                     </p>
                                     <p>
-                                    No matter how powerful or innovative your application idea is, without a solid well thought user interface design it won’t achieve success easily. In today’s competitive world only a good user experience will define the future of the app. Weapplinse is a leading User Interface and User Experience Design Company. We understand the power of user experience engineering and bring our application design experience into play to provide you specially crafted UI/UX design and development services that can help your app and idea stand out.
+                                    We use human behavioral studies, psychology and multiple analytical tools to define what our users might like and provide them with what they want. We have realized long back that in today’s world, you cannot define the behavior of users, it’s us who would have to learn the user preferences and adapt ourselves. We try to merge functionality with pleasurable user experience and build marketing processes around it, rather than the other way around. Our most interesting designing domains are iPhone apps design, Android apps design, website design, Mobile game design, Banner design.
+                                    </p>
+                                    <p>
+                                    UI/UX design is not a new school of thought; it is the same human behavior, which makes us prefer happier places over gloomy places and pretty things over ugly. It’s a mix of eons of human behavioral pattern study and following the best practices used along with constant research and adaptation of latest technology to enable cutting-edge, almost orgasmic user experience over the web.
                                     </p>
                                     <h4>We Hold Expertise in the Following Platforms</h4>
                                     <div className="service-box">
@@ -213,7 +211,7 @@ const uiux = () => {
                             <aside className='sidebar'>
                                 <div className="widget-content">
                                     <ul className="service-list">
-                                        <li><Link href="/services/wireframe-prototype">Wireframe & Prototype</Link></li>
+                                        <li><Link href="/services/ui">UI/UX Customization</Link></li>
                                         <li><Link href="/services/mobile-web-app-design">Mobile & Web App Design</Link></li>
                                         <li><Link href="/services/graphics-design">Graphics Design</Link></li>
                                     </ul>
@@ -238,4 +236,4 @@ const uiux = () => {
       );
 }
 
-export default uiux
+export default wireframeprototype

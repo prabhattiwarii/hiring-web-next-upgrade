@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { arrowIcon } from '@/Helpers/icon';
+import Link from 'next/link';
 
 const BreadcrumbWrap = styled.div`
     width:100%;
@@ -40,11 +41,11 @@ const Breadcrumb = ({ breadcrumbs }) => {
                 {breadcrumbs.map((crumb, index) => (<div key={index} className='title'>{crumb.name}</div>))}
                 <ul className='lists'>
                     <li className='list'>
-                        <a className='link' href="/">Home</a>
+                        <Link className='link' href="/">Home</Link>
                     </li>
                     {breadcrumbs.map((crumb, index) => (
                         <li key={index} className='list'>{arrowIcon({ width: "14", height: "14",fill:"#9DD1FF"})}
-                        <a className='link' href={crumb.path}>{crumb.name}</a>
+                        <Link className='link' href={crumb.path}>{crumb.name}</Link>
                         </li>
                     ))}
                 </ul>

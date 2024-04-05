@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Wrap = styled.div`
     & .banner{
-        background: url('/images/uiuxbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
+        background: url('/images/webbg.jpg');width:100%;min-height: 600px;display: flex;align-items: center;position: relative;background-size: cover;background-position: center center
     } 
     & .dev-section{
         max-width:1280px;margin:0 auto;padding:50px 20px;text-align:center;
@@ -156,9 +156,9 @@ const Wrap = styled.div`
     }
 `
 
-const uiux = () => {
+const mobileappdesign = () => {
     const breadcrumbs = [
-        { name: "UI/UX Customization", path: "/services/ui"},
+        { name: "Mobile & Web App Design", path: "/services/mobile-web-app-design"},
     ];
     const techData = [
         {id:1,name:"Photoshop",icon:photoshopIcon},
@@ -180,22 +180,26 @@ const uiux = () => {
                         <div className='left-section'>
                             <div className="service-detail">
                                 <div className="inner-box">
-                                    <h4>UI UX Design Helps The Application To Win The Customers And Provide Them Exactly What They Are Looking For</h4>
-                                    <p>
-                                    Building experiences across different mobile and websites. We are a leading UX/UI design Company in India serving different industry sectors with our awesome design services.
-                                    </p>
+                                    <h4>Our Attractive Ideas And Design Will Not Only Build Your Brand Name But Also Make An Impact On Your Customer’s Mind.</h4>
+                                    <p>Create Unique And Attractive Web Designs For Your Business!</p>
                                     <div className="img-wrap">
-                                        <img className="wrapimagework" src="/images/uiux_img.jpg" alt="ui-ux development"/>
+                                        <img className="wrapimagework" src="/images/mw_img.jpg" alt="mobile web app design"/>
                                     </div>
-                                    <h4>The Success Of Any App Depends On The Customer's Usage And Experience. If You Provide A Great Experience To The Customer Then You Win!</h4>
+                                    <h4>Weapplinse believes the key to success in developing Graphic Design is in our ability to understand the Client’s vision, and we convey that vision using powerful Graphic Delivery.</h4>
                                     <p>
-                                    When it comes to website and application development the customer satisfaction plays a major role in the success of that particular app or website. To make it better the user interface(UI) and user experience(UX) should be extraordinary.
+                                    We are specialists in web design, be it big or small websites. Our designs are a creative outlet and we make sure our gorgeous web designs and newsletter design are totally inline with clients’ business objectives. An instantly responsive website, logo branding for product identity, naming, colors, custom icon sets, style guide or be it typography. We are focused on helping a host of small businesses succeed online through our coolest software application user interface. We have treated each of our clients as a family. Is it a small business or huge international corporations?
                                     </p>
                                     <p>
-                                    There are many apps on play store and the app store but very few become successful, the reason behind them being successful is they have great look and feel. Almost every user is looking for an app or website which is visually appealing, and has an extremely good feel throughout the usage. So it is quite necessary to put a considerable emphasis on UI and UX development.
+                                    We deliver engaging and stunning websites keeping a focus on elegant design to make your website stand out from your competition. We do take time to understand your mission and your culture and then we translate this knowledge into an exciting new face for your company.
                                     </p>
                                     <p>
-                                    No matter how powerful or innovative your application idea is, without a solid well thought user interface design it won’t achieve success easily. In today’s competitive world only a good user experience will define the future of the app. Weapplinse is a leading User Interface and User Experience Design Company. We understand the power of user experience engineering and bring our application design experience into play to provide you specially crafted UI/UX design and development services that can help your app and idea stand out.
+                                    Since your website design is the reflection of your company, details are important to us, so that we can present an excellent insight about your business and navigate the content. Web design is our passion. We love innovation and coming up with new strategies to push our client’s website forward and make them stand out from the pack.
+                                    </p>
+                                    <p>
+                                    Weapplinse Technology crafts beautiful and stunning mobile app designs that attract customers’ attention quickly. We aim to provide utmost satisfaction at clients' end with our awesome work.
+                                    </p>
+                                    <p>
+                                    Our creative designing team is filled with knowledge and experience to provide the best mobile app designs that make a lasting impression on clients.
                                     </p>
                                     <h4>We Hold Expertise in the Following Platforms</h4>
                                     <div className="service-box">
@@ -214,7 +218,7 @@ const uiux = () => {
                                 <div className="widget-content">
                                     <ul className="service-list">
                                         <li><Link href="/services/wireframe-prototype">Wireframe & Prototype</Link></li>
-                                        <li><Link href="/services/mobile-web-app-design">Mobile & Web App Design</Link></li>
+                                        <li><Link href="/services/ui">UI/UX Customization</Link></li>
                                         <li><Link href="/services/graphics-design">Graphics Design</Link></li>
                                     </ul>
                                 </div>
@@ -238,4 +242,4 @@ const uiux = () => {
       );
 }
 
-export default uiux
+export default mobileappdesign;
