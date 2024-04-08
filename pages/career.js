@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Layout from '@/Components/layout/Layout';
 import Breadcrumb from '@/Components/BreadCrumbs';
-
 import { Icon, Day, Time, Growth, Learning, Environment, Festival, Game} from "../Helpers/icon";
+import Careermodal from '@/Components/careermodal';
+
 
 const Wrap = styled.div`
     & .banner{
@@ -39,7 +40,8 @@ const Wrap = styled.div`
                 }
                 & .job-type .urgent-hiring{position: absolute;padding: 4px 15px;top: 10px;right: 0;line-height: 1.4;font-size: 12px;border-radius: 2px 0 0 2px;background: rgba(210, 0, 1, 0.1);color: #d20001;}
                 & .apply-btn{
-                    padding: 17px;display: inline-block;width: 100%;font-size: 16px;font-weight: 500;border-radius: 0;background: #f2f3f5;border: 1px solid transparent;color: #272f46;cursor:pointer;
+                    padding: 17px;display: inline-block;width: 100%;font-size: 16px;font-weight: 500;border-radius: 0;background: #f2f3f5;border: 1px solid transparent;color: #272f46;cursor:pointer;transition:.3s all;
+                    &:hover{color:#ffffff;background:#e16262;}
                 }
             }
         }
@@ -154,6 +156,16 @@ const Wrap = styled.div`
 
 
 const Career = () => {
+    const [showModal,setShowModal] = useState(false);
+    const [career, setCareer] = useState(null);
+    const handleModal = (title) => {
+        setShowModal(true);
+        setCareer(title);
+      };
+
+    const onCloseModal = () => {
+       setShowModal(false);
+    };
     const data = [
         { id: 1, title: "GlobalClients", icon: Icon },
         { id: 2, title: "5 Day Working", icon: Day },
@@ -189,6 +201,7 @@ const Career = () => {
 
     return (
         <Layout>
+                {showModal && <Careermodal onCloseModal={onCloseModal} career={career}/>}
             <Wrap>
                 <div className="banner">
                     <Breadcrumb breadcrumbs={breadcrumbs}/>
@@ -221,7 +234,7 @@ const Career = () => {
                                         <span className="urgent-hiring">{item.require}</span>
                                     </div>
                                 )}
-                                <button className='apply-btn' type='button'>{item.button}</button>
+                                <button className='apply-btn' type='button' onClick={() => handleModal(item)}>{item.button}</button>
                             </div>
                         ))}
                     </div>

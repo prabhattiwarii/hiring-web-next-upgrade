@@ -22,9 +22,10 @@ const Contact = () => {
         if (validate()) {
             try {
                 const accessKey = "d83d8fa0-33be-4bbc-8f35-6aca855e5cb4";
-                const response = await axios.post("https://api.web3forms.com/submit", { ...form, access_key: accessKey });if(response.data.success){
-                toast.success("form submitted successfully", toastOptions);
-                setForm({first_name: "",last_name: "", email: "", phone: "", message: "", website:"",interest:""});
+                const response = await axios.post("https://api.web3forms.com/submit", { ...form, access_key: accessKey });
+                if(response.data.success){
+                    toast.success("form submitted successfully", toastOptions);
+                    setForm({first_name: "",last_name: "", email: "", phone: "", message: "", website:"",interest:""});
                 } else {
                     toast.error("An error occurred during form submission.", toastOptions);
                 }
